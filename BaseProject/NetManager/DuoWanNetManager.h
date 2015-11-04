@@ -55,18 +55,65 @@ typedef NS_ENUM(NSUInteger, DuoWanHeroList) {
 @interface DuoWanNetManager : BaseNetManager
 
 //根据type属性去确定请求的参数  type属性带Array 则在接收数据的时候 用NSArray接收
+/**
+ *  获取有关英雄的数据
+ *
+ *  @param type             枚举类型
+ *  @param hero             英雄名字
+ *  @param completionHandle 闭包处理
+ *
+ *  @return 网络请求任务
+ */
 +(id)getDataWithType:(DuoWanHeroList)type Hero:(NSString *)hero completionHandle:(void(^)(id model,NSError *error))completionHandle;
 
-
+/**
+ *  获取无英雄相关的列表
+ *
+ *  @param type             枚举类型
+ *  @param completionHandle 闭包处理
+ *
+ *  @return 网络请求任务
+ */
 +(id)getListWithType:(DuoWanList)type completionHandle:(void(^)(id model,NSError *error))completionHandle;
 
 
 
-
+/**
+ *  获取英雄的周数据情况
+ *
+ *  @param heroId           英雄的id
+ *  @param completionHandle 闭包处理
+ *
+ *  @return 网络请求数据
+ */
 +(id)getWeekDataWith:(NSInteger)heroId completionHandl:(void(^)(DuoWanWeekDataModel *model,NSError *error))completionHandle;
+/**
+ *  获取分类装备数据
+ *
+ *  @param tag              分类名字
+ *  @param completionHandle 闭包处理
+ *
+ *  @return 网络请求
+ */
 +(id)getEquipWithTag:(NSString *)tag completionHandl:(void(^)(NSArray *model,NSError *error))completionHandle;
+/**
+ *  获取某装备详细数据
+ *
+ *  @param Id               装备id
+ *  @param completionHandle 闭包处理
+ *
+ *  @return 网络请求
+ */
 +(id)getEquipPreopetyWithId:(NSInteger)Id completionHandl:(void(^)(DuoWanEquipPropetyModel *model,NSError *error))completionHandle;
 
-
+/**
+ *  获取视频数据 分页属性
+ *
+ *  @param page             每页页数
+ *  @param hero             英雄名字
+ *  @param completionHandle 闭包处理
+ *
+ *  @return 网络请求
+ */
 +(id)getMediaDataArrayWithPage:(NSInteger)page Hero:(NSString *)hero completionHandle:(void(^)(NSArray *model,NSError *error))completionHandle;
 @end
