@@ -54,6 +54,7 @@ PODS:
   - FMDB/common (2.5)
   - FMDB/standard (2.5):
     - FMDB/common
+  - iCarousel (1.8.2)
   - Masonry (0.6.3)
   - MBProgressHUD (0.9.1)
   - MJExtension (2.5.16)
@@ -63,6 +64,7 @@ PODS:
     - DACircularProgress (~> 2.3)
     - MBProgressHUD (~> 0.9)
     - SDWebImage (!= 3.7.2, ~> 3.7)
+  - PSCollectionView (0.0.1)
   - RESideMenu (4.0.7)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
@@ -80,12 +82,14 @@ DEPENDENCIES:
   - CocoaLumberjack
   - FlatUIKit
   - FMDB
+  - iCarousel
   - Masonry
   - MBProgressHUD
   - MJExtension
   - MJRefresh
   - MLTransition
   - MWPhotoBrowser
+  - PSCollectionView
   - RESideMenu
   - SDWebImage
   - Shimmer
@@ -102,12 +106,14 @@ SPEC CHECKSUMS:
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: b8c1321a77d91bcc007b94d38cbf5383c95ea30e
   MJRefresh: ca8e9589895977df32d379d46e6b8a5450b3ff44
   MLTransition: 47b87b8bc6077540919dcfc3e0adcc0b4a589910
   MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
+  PSCollectionView: 34b33818bfb5c00a2f7afdae6252baa99b46f814
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86

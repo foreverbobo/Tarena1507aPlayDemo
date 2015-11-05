@@ -24,6 +24,8 @@ pod 'RESideMenu'
 pod 'SWTableViewCell'
 pod 'MWPhotoBrowser'
 pod ‘FMDB’
+pod 'PSCollectionView'
+pod ‘iCarousel’
 end
 
 

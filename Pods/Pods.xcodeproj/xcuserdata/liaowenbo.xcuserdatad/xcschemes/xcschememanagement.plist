@@ -79,6 +79,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PSCollectionView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BaseProject.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -114,6 +119,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>iCarousel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -127,22 +137,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>190B56490A5A6B0B83A6FD4E90762980</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2B91D7C46D7B8F43957B2B6791926F62</key>
+		<key>22D8F7BF925EFCF80CCFBF9DE325E255</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>454E3E052A2C9E1EBCE67A3951809910</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -162,17 +162,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>624F88D0CDCD8471C170AD308D6F3379</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6F3B897B971E03510D79E818F6EC6DE7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>8F74D9EA91F4C43190670066BAC37D44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9494390523250106847516AB47E5F9FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -187,12 +182,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>A4DF01201A3AEA6FA1190C9BC7B95EFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB4004D8921747BD16B494E477681E2A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB67A7A061E0F78D3B2EBD5DD054D047</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B23B3D15FFC0FC9893968F478086D58D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D922ED611B5B7B639738D20543089A31</key>
+		<key>D6192C2F3759F5D5AB08CF61E2C46FB3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -208,6 +218,16 @@
 			<true/>
 		</dict>
 		<key>E2FE87384A67337831E53490EEA8BF11</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAA019E01EE5E010D35242508074DAF9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EBEB2984083CF006E19AB63A81FDF794</key>
 		<dict>
 			<key>primary</key>
 			<true/>

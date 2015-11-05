@@ -29,6 +29,11 @@
 		21A958331BEB096100087537 /* XiMaNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958321BEB096100087537 /* XiMaNetManager.m */; };
 		21A9583D1BEB0ACE00087537 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A9583A1BEB0ACE00087537 /* libMobClickLibrary.a */; };
 		21A9583F1BEB0AFF00087537 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A9583E1BEB0AFF00087537 /* libz.tbd */; };
+		21A958AE1BEB28DC00087537 /* TuWanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958AD1BEB28DC00087537 /* TuWanViewController.m */; };
+		21A958B11BEB28E800087537 /* XiMaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958B01BEB28E800087537 /* XiMaViewController.m */; };
+		21A958B41BEB28EF00087537 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958B31BEB28EF00087537 /* LeftViewController.m */; };
+		21A958B71BEB28FA00087537 /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958B61BEB28FA00087537 /* MyInfoViewController.m */; };
+		21A958BA1BEB29D900087537 /* DuoWanTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958B91BEB29D900087537 /* DuoWanTabBarViewController.m */; };
 		21F2C8081BE73F110085ABB8 /* DuoWanAllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C8051BE73F110085ABB8 /* DuoWanAllHeroModel.m */; };
 		21F2C8091BE73F110085ABB8 /* DuoWanFreeHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C8071BE73F110085ABB8 /* DuoWanFreeHero.m */; };
 		21F2C80C1BE73FBC0085ABB8 /* DuoWanHeroSkinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C80B1BE73FBC0085ABB8 /* DuoWanHeroSkinModel.m */; };
@@ -116,6 +121,16 @@
 		21A9583B1BEB0ACE00087537 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
 		21A9583C1BEB0ACE00087537 /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
 		21A9583E1BEB0AFF00087537 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		21A958AC1BEB28DC00087537 /* TuWanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanViewController.h; sourceTree = "<group>"; };
+		21A958AD1BEB28DC00087537 /* TuWanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanViewController.m; sourceTree = "<group>"; };
+		21A958AF1BEB28E800087537 /* XiMaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaViewController.h; sourceTree = "<group>"; };
+		21A958B01BEB28E800087537 /* XiMaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaViewController.m; sourceTree = "<group>"; };
+		21A958B21BEB28EF00087537 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		21A958B31BEB28EF00087537 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		21A958B51BEB28FA00087537 /* MyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInfoViewController.h; sourceTree = "<group>"; };
+		21A958B61BEB28FA00087537 /* MyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfoViewController.m; sourceTree = "<group>"; };
+		21A958B81BEB29D900087537 /* DuoWanTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanTabBarViewController.h; sourceTree = "<group>"; };
+		21A958B91BEB29D900087537 /* DuoWanTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoWanTabBarViewController.m; sourceTree = "<group>"; };
 		21E07ED81BE09F0200E01938 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		21E07ED91BE09F0200E01938 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		21F2C8041BE73F110085ABB8 /* DuoWanAllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanAllHeroModel.h; sourceTree = "<group>"; };
@@ -329,6 +344,8 @@
 				21A958201BEB08DA00087537 /* 兔玩 */,
 				21A958211BEB08DA00087537 /* 我的信息 */,
 				21A958221BEB08DA00087537 /* 喜马拉雅 */,
+				21A958B21BEB28EF00087537 /* LeftViewController.h */,
+				21A958B31BEB28EF00087537 /* LeftViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -470,6 +487,8 @@
 		21A9581F1BEB08DA00087537 /* 多玩 */ = {
 			isa = PBXGroup;
 			children = (
+				21A958B81BEB29D900087537 /* DuoWanTabBarViewController.h */,
+				21A958B91BEB29D900087537 /* DuoWanTabBarViewController.m */,
 			);
 			path = "多玩";
 			sourceTree = "<group>";
@@ -477,6 +496,8 @@
 		21A958201BEB08DA00087537 /* 兔玩 */ = {
 			isa = PBXGroup;
 			children = (
+				21A958AC1BEB28DC00087537 /* TuWanViewController.h */,
+				21A958AD1BEB28DC00087537 /* TuWanViewController.m */,
 			);
 			path = "兔玩";
 			sourceTree = "<group>";
@@ -484,6 +505,8 @@
 		21A958211BEB08DA00087537 /* 我的信息 */ = {
 			isa = PBXGroup;
 			children = (
+				21A958B51BEB28FA00087537 /* MyInfoViewController.h */,
+				21A958B61BEB28FA00087537 /* MyInfoViewController.m */,
 			);
 			path = "我的信息";
 			sourceTree = "<group>";
@@ -491,6 +514,8 @@
 		21A958221BEB08DA00087537 /* 喜马拉雅 */ = {
 			isa = PBXGroup;
 			children = (
+				21A958AF1BEB28E800087537 /* XiMaViewController.h */,
+				21A958B01BEB28E800087537 /* XiMaViewController.m */,
 			);
 			path = "喜马拉雅";
 			sourceTree = "<group>";
@@ -770,7 +795,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21A958BA1BEB29D900087537 /* DuoWanTabBarViewController.m in Sources */,
 				21F2C8081BE73F110085ABB8 /* DuoWanAllHeroModel.m in Sources */,
+				21A958B11BEB28E800087537 /* XiMaViewController.m in Sources */,
+				21A958B71BEB28FA00087537 /* MyInfoViewController.m in Sources */,
 				21F2C8571BE774A40085ABB8 /* DuoWanTallyModel.m in Sources */,
 				21F2C85A1BE774BB0085ABB8 /* DuoWanEquipModel.m in Sources */,
 				21F2C80C1BE73FBC0085ABB8 /* DuoWanHeroSkinModel.m in Sources */,
@@ -792,6 +820,7 @@
 				21F2C8241BE7535B0085ABB8 /* heroziliao.m in Sources */,
 				21A958301BEB095600087537 /* TuWanBaseNetManager.m in Sources */,
 				21A958331BEB096100087537 /* XiMaNetManager.m in Sources */,
+				21A958B41BEB28EF00087537 /* LeftViewController.m in Sources */,
 				210082641BDE596E007981A4 /* NSString+PJR.m in Sources */,
 				21F2C84E1BE7748C0085ABB8 /* DuoWanEquipPropetyModel.m in Sources */,
 				21F2C8091BE73F110085ABB8 /* DuoWanFreeHero.m in Sources */,
@@ -801,6 +830,7 @@
 				21F2C81B1BE74AEA0085ABB8 /* DuoWanHeroFuwenDaPeiModel.m in Sources */,
 				21F2C8481BE774610085ABB8 /* DuoWanEquipListModel.m in Sources */,
 				210082541BDE5933007981A4 /* BaseModel.m in Sources */,
+				21A958AE1BEB28DC00087537 /* TuWanViewController.m in Sources */,
 				21F2C8121BE741710085ABB8 /* DuoWanHeroMediaModel.m in Sources */,
 				213897581BE734F00097B993 /* TuWanBaseModel.m in Sources */,
 				210082121BDE5010007981A4 /* main.m in Sources */,
@@ -948,6 +978,7 @@
 			baseConfigurationReference = BB9ED1006A4A5583B3344A0C /* Pods-BaseProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = BaseProject/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = BaseProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -966,6 +997,7 @@
 			baseConfigurationReference = 56CFFF7A85B2A0DB8E96FD8E /* Pods-BaseProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = BaseProject/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = BaseProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
