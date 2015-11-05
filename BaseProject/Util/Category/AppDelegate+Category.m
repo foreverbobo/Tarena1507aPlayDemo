@@ -8,11 +8,13 @@
 
 #import "AppDelegate+Category.h"
 #import <AFNetworkActivityIndicatorManager.h>
-
+#import "MobClick.h"
+#define AppKey @"5632e667e0f55ad3c0000fab"
 @implementation AppDelegate (Category)
 
 - (void)initializeWithApplication:(UIApplication *)application{
     //  注册DDLog 取代 NSLog
+    [MobClick startWithAppkey:AppKey reportPolicy:BATCH channelId:nil];
     [DDLog addLogger:[DDASLLogger sharedInstance]];
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [[DDTTYLogger sharedInstance] setColorsEnabled:YES];

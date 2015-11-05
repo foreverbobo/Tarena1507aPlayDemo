@@ -1,5 +1,6 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '8.0'
+inhibit_all_warnings!
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
@@ -16,6 +17,13 @@ pod 'SVProgressHUD'
 pod "TPKeyboardAvoiding"
 pod "MLTransition"
 pod 'CocoaAsyncSocket'
+pod 'Shimmer'
+pod 'FlatUIKit'
+pod 'AsyncDisplayKit'
+pod 'RESideMenu'
+pod 'SWTableViewCell'
+pod 'MWPhotoBrowser'
+pod ‘FMDB’
 end
 
 

@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		210024A31BE85141007B6B7B /* TuWanBaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 210024A21BE85141007B6B7B /* TuWanBaseNetManager.m */; };
 		210082121BDE5010007981A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 210082111BDE5010007981A4 /* main.m */; };
 		2100821B1BDE5010007981A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210082191BDE5010007981A4 /* Main.storyboard */; };
 		2100821D1BDE5010007981A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2100821C1BDE5010007981A4 /* Assets.xcassets */; };
 		210082201BDE5010007981A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2100821E1BDE5010007981A4 /* LaunchScreen.storyboard */; };
 		2100822B1BDE5010007981A4 /* BaseProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2100822A1BDE5010007981A4 /* BaseProjectTests.m */; };
 		210082361BDE5010007981A4 /* BaseProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 210082351BDE5010007981A4 /* BaseProjectUITests.m */; };
-		2100824E1BDE5720007981A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2100824C1BDE5720007981A4 /* ViewController.m */; };
 		210082541BDE5933007981A4 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 210082531BDE5933007981A4 /* BaseModel.m */; };
 		210082611BDE596E007981A4 /* AppDelegate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 210082591BDE596E007981A4 /* AppDelegate+Category.m */; };
 		210082631BDE596E007981A4 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 2100825C1BDE596E007981A4 /* NSObject+Common.m */; };
@@ -22,8 +20,15 @@
 		210082651BDE596E007981A4 /* NSString+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 210082601BDE596E007981A4 /* NSString+QRCode.m */; };
 		210082681BDE5990007981A4 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 210082671BDE5990007981A4 /* BaseViewModel.m */; };
 		2100826B1BDE59EE007981A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2100826A1BDE59EE007981A4 /* AppDelegate.m */; };
-		21211B421BDF170100A73EBD /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21211B411BDF170100A73EBD /* BaseNetManager.m */; };
 		213897581BE734F00097B993 /* TuWanBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 213897571BE734F00097B993 /* TuWanBaseModel.m */; };
+		21A9580A1BEB068200087537 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958091BEB068200087537 /* BaseNetManager.m */; };
+		21A958181BEB083500087537 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21A958151BEB083500087537 /* MBProgressHUD.bundle */; };
+		21A958191BEB083500087537 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958171BEB083500087537 /* MBProgressHUD+MJ.m */; };
+		21A9582D1BEB094C00087537 /* DuoWanNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A9582C1BEB094C00087537 /* DuoWanNetManager.m */; };
+		21A958301BEB095600087537 /* TuWanBaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A9582F1BEB095600087537 /* TuWanBaseNetManager.m */; };
+		21A958331BEB096100087537 /* XiMaNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958321BEB096100087537 /* XiMaNetManager.m */; };
+		21A9583D1BEB0ACE00087537 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A9583A1BEB0ACE00087537 /* libMobClickLibrary.a */; };
+		21A9583F1BEB0AFF00087537 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A9583E1BEB0AFF00087537 /* libz.tbd */; };
 		21F2C8081BE73F110085ABB8 /* DuoWanAllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C8051BE73F110085ABB8 /* DuoWanAllHeroModel.m */; };
 		21F2C8091BE73F110085ABB8 /* DuoWanFreeHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C8071BE73F110085ABB8 /* DuoWanFreeHero.m */; };
 		21F2C80C1BE73FBC0085ABB8 /* DuoWanHeroSkinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C80B1BE73FBC0085ABB8 /* DuoWanHeroSkinModel.m */; };
@@ -44,9 +49,7 @@
 		21F2C85A1BE774BB0085ABB8 /* DuoWanEquipModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C8591BE774BB0085ABB8 /* DuoWanEquipModel.m */; };
 		21F2C85F1BE782010085ABB8 /* AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C85C1BE782010085ABB8 /* AlbumModel.m */; };
 		21F2C8601BE782010085ABB8 /* RankingListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C85E1BE782010085ABB8 /* RankingListModel.m */; };
-		21FB83621BE8828100210D85 /* DuoWanNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB83611BE8828100210D85 /* DuoWanNetManager.m */; };
 		21FB83651BE8852F00210D85 /* DuoWanWeekDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB83641BE8852F00210D85 /* DuoWanWeekDataModel.m */; };
-		21FB83681BE8AA1700210D85 /* XiMaNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FB83671BE8AA1700210D85 /* XiMaNetManager.m */; };
 		AAC4218EB872F5A0FFCA0F3E /* libPods-BaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3C1C80398B345D901DD789 /* libPods-BaseProject.a */; };
 /* End PBXBuildFile section */
 
@@ -68,8 +71,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		210024A11BE85141007B6B7B /* TuWanBaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanBaseNetManager.h; sourceTree = "<group>"; };
-		210024A21BE85141007B6B7B /* TuWanBaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanBaseNetManager.m; sourceTree = "<group>"; };
 		2100820D1BDE5010007981A4 /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		210082111BDE5010007981A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2100821A1BDE5010007981A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,8 +83,6 @@
 		210082311BDE5010007981A4 /* BaseProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		210082351BDE5010007981A4 /* BaseProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseProjectUITests.m; sourceTree = "<group>"; };
 		210082371BDE5010007981A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2100824B1BDE5720007981A4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2100824C1BDE5720007981A4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		210082501BDE57A1007981A4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		210082511BDE58C7007981A4 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		210082521BDE5933007981A4 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -100,10 +99,23 @@
 		210082671BDE5990007981A4 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 		210082691BDE59EE007981A4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2100826A1BDE59EE007981A4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		21211B401BDF170100A73EBD /* BaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetManager.h; sourceTree = "<group>"; };
-		21211B411BDF170100A73EBD /* BaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetManager.m; sourceTree = "<group>"; };
 		213897561BE734F00097B993 /* TuWanBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanBaseModel.h; sourceTree = "<group>"; };
 		213897571BE734F00097B993 /* TuWanBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanBaseModel.m; sourceTree = "<group>"; };
+		21A958081BEB068200087537 /* BaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetManager.h; sourceTree = "<group>"; };
+		21A958091BEB068200087537 /* BaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetManager.m; sourceTree = "<group>"; };
+		21A958151BEB083500087537 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		21A958161BEB083500087537 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		21A958171BEB083500087537 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		21A9582B1BEB094C00087537 /* DuoWanNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanNetManager.h; sourceTree = "<group>"; };
+		21A9582C1BEB094C00087537 /* DuoWanNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoWanNetManager.m; sourceTree = "<group>"; };
+		21A9582E1BEB095600087537 /* TuWanBaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanBaseNetManager.h; sourceTree = "<group>"; };
+		21A9582F1BEB095600087537 /* TuWanBaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanBaseNetManager.m; sourceTree = "<group>"; };
+		21A958311BEB096100087537 /* XiMaNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaNetManager.h; sourceTree = "<group>"; };
+		21A958321BEB096100087537 /* XiMaNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaNetManager.m; sourceTree = "<group>"; };
+		21A9583A1BEB0ACE00087537 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		21A9583B1BEB0ACE00087537 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		21A9583C1BEB0ACE00087537 /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
+		21A9583E1BEB0AFF00087537 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		21E07ED81BE09F0200E01938 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		21E07ED91BE09F0200E01938 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		21F2C8041BE73F110085ABB8 /* DuoWanAllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanAllHeroModel.h; sourceTree = "<group>"; };
@@ -146,12 +158,8 @@
 		21F2C85C1BE782010085ABB8 /* AlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumModel.m; sourceTree = "<group>"; };
 		21F2C85D1BE782010085ABB8 /* RankingListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListModel.h; sourceTree = "<group>"; };
 		21F2C85E1BE782010085ABB8 /* RankingListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListModel.m; sourceTree = "<group>"; };
-		21FB83601BE8828100210D85 /* DuoWanNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanNetManager.h; sourceTree = "<group>"; };
-		21FB83611BE8828100210D85 /* DuoWanNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoWanNetManager.m; sourceTree = "<group>"; };
 		21FB83631BE8852F00210D85 /* DuoWanWeekDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanWeekDataModel.h; sourceTree = "<group>"; };
 		21FB83641BE8852F00210D85 /* DuoWanWeekDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoWanWeekDataModel.m; sourceTree = "<group>"; };
-		21FB83661BE8AA1700210D85 /* XiMaNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaNetManager.h; sourceTree = "<group>"; };
-		21FB83671BE8AA1700210D85 /* XiMaNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaNetManager.m; sourceTree = "<group>"; };
 		56CFFF7A85B2A0DB8E96FD8E /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		5F3C1C80398B345D901DD789 /* libPods-BaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9ED1006A4A5583B3344A0C /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,7 +170,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21A9583F1BEB0AFF00087537 /* libz.tbd in Frameworks */,
 				AAC4218EB872F5A0FFCA0F3E /* libPods-BaseProject.a in Frameworks */,
+				21A9583D1BEB0ACE00087537 /* libMobClickLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,8 +223,8 @@
 				210082441BDE5720007981A4 /* NetManager */,
 				210082451BDE5720007981A4 /* Resource */,
 				210082461BDE5720007981A4 /* Util */,
-				210082481BDE5720007981A4 /* Vendor */,
-				210082491BDE5720007981A4 /* View */,
+				21A9581A1BEB08C100087537 /* View */,
+				21A958141BEB07E100087537 /* Vendor */,
 				2100824A1BDE5720007981A4 /* ViewController */,
 				2100824D1BDE5720007981A4 /* ViewModel */,
 				210082691BDE59EE007981A4 /* AppDelegate.h */,
@@ -266,14 +276,12 @@
 		210082441BDE5720007981A4 /* NetManager */ = {
 			isa = PBXGroup;
 			children = (
-				21211B401BDF170100A73EBD /* BaseNetManager.h */,
-				21211B411BDF170100A73EBD /* BaseNetManager.m */,
-				210024A11BE85141007B6B7B /* TuWanBaseNetManager.h */,
-				210024A21BE85141007B6B7B /* TuWanBaseNetManager.m */,
-				21FB83601BE8828100210D85 /* DuoWanNetManager.h */,
-				21FB83611BE8828100210D85 /* DuoWanNetManager.m */,
-				21FB83661BE8AA1700210D85 /* XiMaNetManager.h */,
-				21FB83671BE8AA1700210D85 /* XiMaNetManager.m */,
+				21A958271BEB08F600087537 /* 多玩 */,
+				21A958281BEB08F600087537 /* 兔玩 */,
+				21A958291BEB08F600087537 /* 我的信息 */,
+				21A9582A1BEB08F600087537 /* 喜马拉雅 */,
+				21A958081BEB068200087537 /* BaseNetManager.h */,
+				21A958091BEB068200087537 /* BaseNetManager.m */,
 				21F2C8221BE7535B0085ABB8 /* heroziliao.h */,
 				21F2C8231BE7535B0085ABB8 /* heroziliao.m */,
 			);
@@ -314,25 +322,13 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		210082481BDE5720007981A4 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
-		210082491BDE5720007981A4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		2100824A1BDE5720007981A4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2100824B1BDE5720007981A4 /* ViewController.h */,
-				2100824C1BDE5720007981A4 /* ViewController.m */,
+				21A9581F1BEB08DA00087537 /* 多玩 */,
+				21A958201BEB08DA00087537 /* 兔玩 */,
+				21A958211BEB08DA00087537 /* 我的信息 */,
+				21A958221BEB08DA00087537 /* 喜马拉雅 */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -340,6 +336,10 @@
 		2100824D1BDE5720007981A4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				21A958231BEB08E800087537 /* 多玩 */,
+				21A958241BEB08E800087537 /* 兔玩 */,
+				21A958251BEB08E800087537 /* 我的信息 */,
+				21A958261BEB08E800087537 /* 喜马拉雅 */,
 				210082661BDE5990007981A4 /* BaseViewModel.h */,
 				210082671BDE5990007981A4 /* BaseViewModel.m */,
 			);
@@ -417,6 +417,156 @@
 			path = "喜马拉雅";
 			sourceTree = "<group>";
 		};
+		21A958141BEB07E100087537 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				21A958391BEB0ACE00087537 /* UMAnalytics_Sdk_3.6.4 */,
+				21A958151BEB083500087537 /* MBProgressHUD.bundle */,
+				21A958161BEB083500087537 /* MBProgressHUD+MJ.h */,
+				21A958171BEB083500087537 /* MBProgressHUD+MJ.m */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		21A9581A1BEB08C100087537 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21A9581B1BEB08CD00087537 /* 多玩 */,
+				21A9581C1BEB08CD00087537 /* 兔玩 */,
+				21A9581D1BEB08CD00087537 /* 我的信息 */,
+				21A9581E1BEB08CD00087537 /* 喜马拉雅 */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21A9581B1BEB08CD00087537 /* 多玩 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "多玩";
+			sourceTree = "<group>";
+		};
+		21A9581C1BEB08CD00087537 /* 兔玩 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "兔玩";
+			sourceTree = "<group>";
+		};
+		21A9581D1BEB08CD00087537 /* 我的信息 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的信息";
+			sourceTree = "<group>";
+		};
+		21A9581E1BEB08CD00087537 /* 喜马拉雅 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "喜马拉雅";
+			sourceTree = "<group>";
+		};
+		21A9581F1BEB08DA00087537 /* 多玩 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "多玩";
+			sourceTree = "<group>";
+		};
+		21A958201BEB08DA00087537 /* 兔玩 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "兔玩";
+			sourceTree = "<group>";
+		};
+		21A958211BEB08DA00087537 /* 我的信息 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的信息";
+			sourceTree = "<group>";
+		};
+		21A958221BEB08DA00087537 /* 喜马拉雅 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "喜马拉雅";
+			sourceTree = "<group>";
+		};
+		21A958231BEB08E800087537 /* 多玩 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "多玩";
+			sourceTree = "<group>";
+		};
+		21A958241BEB08E800087537 /* 兔玩 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "兔玩";
+			sourceTree = "<group>";
+		};
+		21A958251BEB08E800087537 /* 我的信息 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的信息";
+			sourceTree = "<group>";
+		};
+		21A958261BEB08E800087537 /* 喜马拉雅 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "喜马拉雅";
+			sourceTree = "<group>";
+		};
+		21A958271BEB08F600087537 /* 多玩 */ = {
+			isa = PBXGroup;
+			children = (
+				21A9582B1BEB094C00087537 /* DuoWanNetManager.h */,
+				21A9582C1BEB094C00087537 /* DuoWanNetManager.m */,
+			);
+			path = "多玩";
+			sourceTree = "<group>";
+		};
+		21A958281BEB08F600087537 /* 兔玩 */ = {
+			isa = PBXGroup;
+			children = (
+				21A9582E1BEB095600087537 /* TuWanBaseNetManager.h */,
+				21A9582F1BEB095600087537 /* TuWanBaseNetManager.m */,
+			);
+			path = "兔玩";
+			sourceTree = "<group>";
+		};
+		21A958291BEB08F600087537 /* 我的信息 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的信息";
+			sourceTree = "<group>";
+		};
+		21A9582A1BEB08F600087537 /* 喜马拉雅 */ = {
+			isa = PBXGroup;
+			children = (
+				21A958311BEB096100087537 /* XiMaNetManager.h */,
+				21A958321BEB096100087537 /* XiMaNetManager.m */,
+			);
+			path = "喜马拉雅";
+			sourceTree = "<group>";
+		};
+		21A958391BEB0ACE00087537 /* UMAnalytics_Sdk_3.6.4 */ = {
+			isa = PBXGroup;
+			children = (
+				21A9583A1BEB0ACE00087537 /* libMobClickLibrary.a */,
+				21A9583B1BEB0ACE00087537 /* MobClick.h */,
+				21A9583C1BEB0ACE00087537 /* MobClickSocialAnalytics.h */,
+			);
+			path = UMAnalytics_Sdk_3.6.4;
+			sourceTree = "<group>";
+		};
 		4F2D96579F222ABD02213623 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +579,7 @@
 		B7D328B1C9CCDAE0CFEA528A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				21A9583E1BEB0AFF00087537 /* libz.tbd */,
 				5F3C1C80398B345D901DD789 /* libPods-BaseProject.a */,
 			);
 			name = Frameworks;
@@ -544,6 +695,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				210082201BDE5010007981A4 /* LaunchScreen.storyboard in Resources */,
+				21A958181BEB083500087537 /* MBProgressHUD.bundle in Resources */,
 				2100821D1BDE5010007981A4 /* Assets.xcassets in Resources */,
 				2100821B1BDE5010007981A4 /* Main.storyboard in Resources */,
 			);
@@ -629,27 +781,27 @@
 				210082631BDE596E007981A4 /* NSObject+Common.m in Sources */,
 				21F2C8451BE774540085ABB8 /* DuoWanBestGroup.m in Sources */,
 				21F2C8181BE743320085ABB8 /* DuoWanHeroMaterialModel.m in Sources */,
+				21A958191BEB083500087537 /* MBProgressHUD+MJ.m in Sources */,
 				21F2C80F1BE740E70085ABB8 /* DuowanHeroVoiceModel.m in Sources */,
 				210082611BDE596E007981A4 /* AppDelegate+Category.m in Sources */,
 				21F2C8211BE74CC10085ABB8 /* DuoWanHeroChangeModel.m in Sources */,
 				210082681BDE5990007981A4 /* BaseViewModel.m in Sources */,
 				21F2C8151BE7429C0085ABB8 /* DuoWanHeroEquipModel.m in Sources */,
 				21F2C85F1BE782010085ABB8 /* AlbumModel.m in Sources */,
+				21A9582D1BEB094C00087537 /* DuoWanNetManager.m in Sources */,
 				21F2C8241BE7535B0085ABB8 /* heroziliao.m in Sources */,
-				2100824E1BDE5720007981A4 /* ViewController.m in Sources */,
-				21FB83621BE8828100210D85 /* DuoWanNetManager.m in Sources */,
+				21A958301BEB095600087537 /* TuWanBaseNetManager.m in Sources */,
+				21A958331BEB096100087537 /* XiMaNetManager.m in Sources */,
 				210082641BDE596E007981A4 /* NSString+PJR.m in Sources */,
-				21FB83681BE8AA1700210D85 /* XiMaNetManager.m in Sources */,
 				21F2C84E1BE7748C0085ABB8 /* DuoWanEquipPropetyModel.m in Sources */,
-				21211B421BDF170100A73EBD /* BaseNetManager.m in Sources */,
 				21F2C8091BE73F110085ABB8 /* DuoWanFreeHero.m in Sources */,
 				21F2C8561BE774A40085ABB8 /* DuoWanSkillModel.m in Sources */,
 				210082651BDE596E007981A4 /* NSString+QRCode.m in Sources */,
+				21A9580A1BEB068200087537 /* BaseNetManager.m in Sources */,
 				21F2C81B1BE74AEA0085ABB8 /* DuoWanHeroFuwenDaPeiModel.m in Sources */,
 				21F2C8481BE774610085ABB8 /* DuoWanEquipListModel.m in Sources */,
 				210082541BDE5933007981A4 /* BaseModel.m in Sources */,
 				21F2C8121BE741710085ABB8 /* DuoWanHeroMediaModel.m in Sources */,
-				210024A31BE85141007B6B7B /* TuWanBaseNetManager.m in Sources */,
 				213897581BE734F00097B993 /* TuWanBaseModel.m in Sources */,
 				210082121BDE5010007981A4 /* main.m in Sources */,
 				21F2C8511BE774960085ABB8 /* DuoWanGiftModel.m in Sources */,
@@ -800,6 +952,10 @@
 				INFOPLIST_FILE = BaseProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BaseProject/Vendor/UMAnalytics_Sdk_3.6.4",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = BoBo.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -814,6 +970,10 @@
 				INFOPLIST_FILE = BaseProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BaseProject/Vendor/UMAnalytics_Sdk_3.6.4",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = BoBo.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
