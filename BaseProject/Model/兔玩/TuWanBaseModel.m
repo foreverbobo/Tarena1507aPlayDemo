@@ -26,7 +26,7 @@
 @implementation TuWanDataIndexpicModel
 +(NSDictionary *)replacedKeyFromPropertyName
 {
-    return @{@"typeName":@"typename"};
+    return @{@"typeName":@"typename",@"indexpicDescription":@"description"};
 }
 +(NSDictionary *)objectClassInArray
 {

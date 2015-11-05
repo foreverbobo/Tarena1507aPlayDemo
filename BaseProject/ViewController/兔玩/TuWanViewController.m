@@ -7,7 +7,7 @@
 //
 
 #import "TuWanViewController.h"
-
+#import "TuWanViewModel.h"
 @interface TuWanViewController ()
 
 @end
@@ -27,14 +27,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"游戏资讯";
-    
     self.view.backgroundColor = [UIColor greenSeaColor];
+    
+    [FactoryClass addMenuItemToVC:self];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 
 

@@ -21,12 +21,15 @@
 #define TARGET_OS_WATCH 0
 
 #endif
+
+
+
 /*Xcode7以下版本需要添加上方宏定义 支持AF*/
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "AppDelegate.h"
-
+#import "FactoryClass.h"
 //用于存放全局宏定义 或者 静态字符串
 #import "Constants.h"
 
@@ -73,7 +76,6 @@ static const int ddLogLevel = DDLogLevelError;
 
 #import <PSCollectionView.h>
 #import <iCarousel.h>
-
 //这个键盘弹出不会被遮住的一个视图
 #import <TPKeyboardAvoidingTableView.h>
 #import <TPKeyboardAvoidingScrollView.h>

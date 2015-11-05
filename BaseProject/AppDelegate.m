@@ -9,16 +9,32 @@
 #import "AppDelegate+Category.h"
 #import "LeftViewController.h"
 #import "TuWanViewController.h"
+#import "TuWanBaseNetManager.h"
+#import "DuoWanViewController.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    [self initializeWithApplication:application];
+    [self configGlobalUIStyle];
+    self.window.rootViewController = self.sideMenu;
+   
+
+    
+    
+    return YES;
+}
+
+
+
 -(RESideMenu *)sideMenu
 {
     if(!_sideMenu)
     {
-        _sideMenu = [[RESideMenu alloc]initWithContentViewController:[TuWanViewController standardTuWanNavi] leftMenuViewController:[LeftViewController new] rightMenuViewController:nil];
+        _sideMenu = [[RESideMenu alloc]initWithContentViewController:[TuWanViewController standardTuWanNavi] leftMenuViewController:[DuoWanViewController new] rightMenuViewController:nil];
         //为sidemenu 设置 背景图
         _sideMenu.backgroundImage = [UIImage imageNamed:@"a4825652"];
     }
@@ -43,12 +59,6 @@
     /**配置导航栏题目的样式 */
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont flatFontOfSize:kNaviTitleFontSize],NSForegroundColorAttributeName:kNaviTitleColor}];
 }
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    [self initializeWithApplication:application];
-    [self configGlobalUIStyle];
-    self.window.rootViewController = self.sideMenu;
-    return YES;
-}
+
 
 @end
