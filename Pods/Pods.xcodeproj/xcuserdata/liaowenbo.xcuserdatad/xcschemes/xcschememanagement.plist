@@ -119,6 +119,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>WMPageController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>iCarousel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -137,7 +142,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>22D8F7BF925EFCF80CCFBF9DE325E255</key>
+		<key>1FCECA824AB955537878A8A4D8DD83E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38780E632142099ED197680A3D13C227</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -148,6 +158,16 @@
 			<true/>
 		</dict>
 		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>54D737F7A2DFC1A9CDDC42EDBCE54870</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5687AD239B8DCD37CFAEDB9B1D226E1D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -167,6 +187,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>91467FC66DCA3467B6788466452661C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9494390523250106847516AB47E5F9FF</key>
 		<dict>
 			<key>primary</key>
@@ -182,17 +207,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A4DF01201A3AEA6FA1190C9BC7B95EFE</key>
+		<key>A48FD8D6FB3E2ABE2E0161980BF5EA75</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AB4004D8921747BD16B494E477681E2A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AB67A7A061E0F78D3B2EBD5DD054D047</key>
+		<key>AD47E0E8EEDFDCC7BBC64085DF98C676</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -202,7 +222,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D6192C2F3759F5D5AB08CF61E2C46FB3</key>
+		<key>C654AD5FCDEDDF9C8E0752BEF85CA277</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -218,16 +238,6 @@
 			<true/>
 		</dict>
 		<key>E2FE87384A67337831E53490EEA8BF11</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EAA019E01EE5E010D35242508074DAF9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EBEB2984083CF006E19AB63A81FDF794</key>
 		<dict>
 			<key>primary</key>
 			<true/>

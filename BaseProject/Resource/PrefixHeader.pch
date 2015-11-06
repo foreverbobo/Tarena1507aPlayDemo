@@ -74,8 +74,11 @@ static const int ddLogLevel = DDLogLevelError;
 
 #import <FMDB.h>   //对sqlite3的封装 想使用  先引入sqlite3的类库
 
-#import <PSCollectionView.h>
-#import <iCarousel.h>
+#import <WMPageController.h>
+
+#import <PSCollectionView.h>//瀑布流控件
+
+#import <iCarousel.h>//超炫的3D滑动展示控件  类似特殊布局的collectionView
 //这个键盘弹出不会被遮住的一个视图
 #import <TPKeyboardAvoidingTableView.h>
 #import <TPKeyboardAvoidingScrollView.h>

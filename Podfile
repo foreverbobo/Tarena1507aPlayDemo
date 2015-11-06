@@ -26,6 +26,7 @@ pod 'MWPhotoBrowser'
 pod ‘FMDB’
 pod 'PSCollectionView'
 pod ‘iCarousel’
+pod ‘WMPageController’
 end
 
 
