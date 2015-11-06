@@ -11,4 +11,5 @@
 @interface FactoryClass : NSObject
 /**向某个控制器上添加菜单按钮 */
 +(void)addMenuItemToVC:(UIViewController *)vc;
++(void)addReturnItemToVC:(UIViewController *)vc;
 @end

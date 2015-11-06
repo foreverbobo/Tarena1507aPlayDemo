@@ -125,8 +125,13 @@
 }
 -(void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index
 {
+    if([self.tuwanVM isHtmlInIndexPicForRow:index])
+    {
+        NSURL *url = [self.tuwanVM htmlURLForRowInIndexPic:index];
+        TuWanWebView *webview = [[TuWanWebView alloc]initWithURL:url];
+        [self.navigationController pushViewController:webview animated:YES];
+    }
     
-
 }
 
 -(instancetype)initWithType:(TuWanListType)type
@@ -215,10 +220,15 @@ kRemoveCellSeparator
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSURL *url = [self.tuwanVM htmlURLForRowInList:indexPath.row];
-    TuWanWebView *webview = [[TuWanWebView alloc]init];
-    webview.url = url;
-    [self.navigationController pushViewController:webview animated:YES];
+    if([self.tuwanVM isHtmlInListForRow:indexPath.row])
+    {
+        NSURL *url = [self.tuwanVM htmlURLForRowInList:indexPath.row];
+        TuWanWebView *webview = [[TuWanWebView alloc]initWithURL:url];
+        [self.navigationController pushViewController:webview animated:YES];
+    }
+    
+    
+    
 }
 
 /*

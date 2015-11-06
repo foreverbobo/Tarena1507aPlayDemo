@@ -31,7 +31,7 @@
 - (WBImageView *)iconIV0 {
     if(_iconIV0 == nil) {
         _iconIV0 = [[WBImageView alloc] init];
-        _iconIV0.contentMode = 2;
+       // _iconIV0.contentMode = 2;
     }
     return _iconIV0;
 }
@@ -39,7 +39,7 @@
 - (WBImageView *)iconIV1 {
     if(_iconIV1 == nil) {
         _iconIV1 = [[WBImageView alloc] init];
-        _iconIV1.contentMode = 2;
+        //_iconIV1.contentMode = 2;
     }
     return _iconIV1;
 }
@@ -47,7 +47,7 @@
 - (WBImageView *)iconIV2 {
     if(_iconIV2 == nil) {
         _iconIV2 = [[WBImageView alloc] init];
-        _iconIV2.contentMode = 2;
+       // _iconIV2.contentMode = 2;
     }
     return _iconIV2;
 }

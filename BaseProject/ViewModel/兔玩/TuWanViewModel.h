@@ -34,6 +34,8 @@
 -(NSString *)titleForRowInIndexPic:(NSInteger)row;
 /** 滚动展示栏的数量 */
 @property (nonatomic,assign)NSInteger headNumber;
+
+
 -(NSURL *)htmlURLForRowInIndexPic:(NSInteger)row;
 
 
@@ -44,5 +46,17 @@
 @property (nonatomic,getter=isExistIndexPic)BOOL existIndexPic;
 /**判断是否有头部滚动栏 */
 @property (nonatomic,strong)NSArray *indexPicArr;
+
+/** 判断当前数据类型是视频 */
+-(BOOL)isVideoInListForRow:(NSInteger)row;
+-(BOOL)isVideoInIndexPicForRow:(NSInteger)row;
+/** 判断数据类型是图片 */
+-(BOOL)isPicInListForRow:(NSInteger)row;
+-(BOOL)isPicInIndexPicForRow:(NSInteger)row;
+/** 判断数据类型是html */
+-(BOOL)isHtmlInListForRow:(NSInteger)row;
+-(BOOL)isHtmlInIndexPicForRow:(NSInteger)row;
+
+
 
 @end

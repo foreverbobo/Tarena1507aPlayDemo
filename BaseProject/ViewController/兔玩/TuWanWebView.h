@@ -10,4 +10,5 @@
 
 @interface TuWanWebView : UIViewController
 @property (nonatomic,strong)NSURL *url;
+-(id)initWithURL:(NSURL *)url;
 @end

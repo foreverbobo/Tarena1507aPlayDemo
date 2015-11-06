@@ -8,22 +8,51 @@
 
 #import "TuWanWebView.h"
 
-@interface TuWanWebView ()
-
+@interface TuWanWebView ()<UIWebViewDelegate>
+@property (nonatomic,strong)UIWebView *webView;
 @end
 
 @implementation TuWanWebView
-
+-(id)initWithURL:(NSURL *)url
+{
+    if(self = [super init])
+    {
+        _url = url;
+    }
+    return self;
+}
+-(UIWebView *)webView
+{
+    if(!_webView)
+    {
+        _webView = [UIWebView new];
+        [_webView loadRequest:[NSURLRequest requestWithURL:self.url]];
+        _webView.delegate = self;
+    }
+    return _webView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIWebView *webView = [UIWebView new];
-    [self.view addSubview:webView];
-    [webView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.view addSubview:self.webView];
+    [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(0);
     }];
-    NSURLRequest *request = [NSURLRequest requestWithURL:self.url];
-    [webView loadRequest:request];
+    [FactoryClass addReturnItemToVC:self];
 }
+#pragma mark -- WebViewDelegate
+-(void)webViewDidStartLoad:(UIWebView *)webView
+{
+    [self showProgress];
+}
+-(void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [self hideProgress];
+}
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [self hideProgress];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
