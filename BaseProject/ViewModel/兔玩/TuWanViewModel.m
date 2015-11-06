@@ -66,7 +66,7 @@
 /** 返回列表中某行数据的描述 */
 -(NSString *)descForRowInList:(NSInteger)row
 {
-    return [self listModelForArr:self.dataArr row:row].indexpicDescription;
+    return [self listModelForArr:self.dataArr row:row].longtitle;
 }
 /** 返回列表中某行数据的浏览人数 */
 -(NSString *)clicksForRowInList:(NSInteger)row
@@ -83,7 +83,10 @@
 {
     return self.indexPicArr.count;
 }
-
+-(NSInteger)rowNumber
+{
+    return self.dataArr.count;
+}
 /** 滚动展示栏的图片 */
 -(NSURL *)headerImageUrlWithRowInIndexPic:(NSInteger)row
 {
@@ -113,7 +116,14 @@
     self.start += 11;
     [self getDataFromNetCompleteHandle:completionHandle];
 }
+-(NSURL *)indexPicURLInArrarWithIndex:(NSInteger)index WithRow:(NSInteger)row
+{
+    TuWanDataListModel *listModel = self.dataArr[row];
+    TuwanDataListShowItemModel *showItemModel = listModel.showitem[index];
+    NSString *path = showItemModel.pic;
+    return [NSURL URLWithString:path];
 
+}
 -(void)getDataFromNetCompleteHandle:(CompletionHandle)completionHandle
 {
     self.dataTask = [TuWanBaseNetManager getListWithType:self.type start:self.start completionHandle:^(TuWanBaseModel *model, NSError *error) {

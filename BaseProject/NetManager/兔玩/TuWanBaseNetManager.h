@@ -18,12 +18,13 @@ typedef NS_ENUM(NSUInteger, TuWanListType) {
     TuWanListTypeXingji2,
     TuWanListTypeShouwang,
     TuWanListTypeHuanhua,
-    TuWanListTypeQuwen,
-    TuWanListTypeCos,
-    TuWanListTypeMeinv,
     TuWanListTypePicture,
     TuWanListTypeVideo,
-    TuWanListTypeGuide
+    TuWanListTypeGuide,
+    TuWanListTypeQuwen,
+    TuWanListTypeCos,
+    TuWanListTypeMeinv
+    
 };
 @interface TuWanBaseNetManager : BaseNetManager
 /**

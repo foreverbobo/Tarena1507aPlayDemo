@@ -25,32 +25,57 @@
 
 
 @interface TuWanDataIndexpicModel : BaseModel
-@property (nonatomic, strong) NSString *color;
-@property (nonatomic, strong) NSString *source;
-@property (nonatomic, strong) NSString *showtype;
-@property (nonatomic, strong) NSString *click;
-@property (nonatomic, strong) NSString *url;
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *typechild;
-@property (nonatomic, strong) NSString *typeName;
-@property (nonatomic, strong) NSString *longtitle;
-@property (nonatomic, strong) NSArray *showitem;
-@property (nonatomic, strong) NSString *html5;
+@property (nonatomic, copy) NSString *color;
+
+@property (nonatomic, copy) NSString *source;
+
+@property (nonatomic, copy) NSString *showtype;
+
+@property (nonatomic, copy) NSString *title;
+
+@property (nonatomic, copy) NSString *click;
+
+@property (nonatomic, copy) NSString *url;
+
+@property (nonatomic, copy) NSString *typechild;
+
+@property (nonatomic, copy) NSString *longtitle;
+
+@property (nonatomic, copy) NSString *typeName;
+
+@property (nonatomic, copy) NSString *html5;
+
+@property (nonatomic, copy) NSString *toutiao;
+
 @property (nonatomic, strong) TuWanDataListInfoChildModel *infochild;
-@property (nonatomic, strong) NSString *litpic;
-@property (nonatomic, assign) id toutiao;
-@property (nonatomic, assign) double pictotal;
-@property (nonatomic, strong) NSString *aid;
-@property (nonatomic, strong) NSString *pubdate;
-@property (nonatomic, strong) NSString *type;
-@property (nonatomic, strong) NSString *timestamp;
-@property (nonatomic, strong) NSString *murl;
-@property (nonatomic, strong) NSString *banner;
-@property (nonatomic, strong) NSString *zangs;
-@property (nonatomic, strong) NSString *writer;
-@property (nonatomic, assign) id timer;
-@property (nonatomic, strong) NSString *comment;
-@property (nonatomic, strong) NSString *indexpicDescription;
+
+@property (nonatomic, copy) NSString *litpic;
+
+@property (nonatomic, copy) NSString *aid;
+
+@property (nonatomic, assign) NSInteger pictotal;
+
+@property (nonatomic, strong) NSArray *showitem;
+
+@property (nonatomic, copy) NSString *pubdate;
+
+@property (nonatomic, copy) NSString *type;
+
+@property (nonatomic, copy) NSString *timestamp;
+
+@property (nonatomic, copy) NSString *murl;
+
+@property (nonatomic, copy) NSString *banner;
+
+@property (nonatomic, copy) NSString *zangs;
+
+@property (nonatomic, copy) NSString *writer;
+
+@property (nonatomic, copy) NSString *timer;
+
+@property (nonatomic, copy) NSString *comment;
+
+@property (nonatomic, copy) NSString *desc;
 @end
 
 @interface TuWanDataListModel : TuWanDataIndexpicModel

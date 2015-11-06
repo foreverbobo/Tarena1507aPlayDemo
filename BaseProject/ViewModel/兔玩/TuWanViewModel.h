@@ -25,6 +25,9 @@
 -(NSString *)clicksForRowInList:(NSInteger)row;
 -(NSURL *)htmlURLForRowInList:(NSInteger)row;
 
+
+-(NSURL *)indexPicURLInArrarWithIndex:(NSInteger)index WithRow:(NSInteger)row;
+
 /** 滚动展示栏的图片 */
 -(NSURL *)headerImageUrlWithRowInIndexPic:(NSInteger)row;
 /** 滚动展示栏的文字 */

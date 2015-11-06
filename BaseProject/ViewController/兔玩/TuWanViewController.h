@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TuWanViewController : UIViewController
+@interface TuWanViewController : WMPageController
 +(UINavigationController *)standardTuWanNavi;
 @end

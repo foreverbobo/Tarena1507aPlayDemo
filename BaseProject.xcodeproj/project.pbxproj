@@ -25,6 +25,9 @@
 		2153375A1BEB47A3008E3BE0 /* TuWanViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 215337591BEB47A3008E3BE0 /* TuWanViewModel.m */; };
 		2153375D1BEB69F2008E3BE0 /* DuoWanViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2153375C1BEB69F2008E3BE0 /* DuoWanViewModel.m */; };
 		215337631BEB7DB5008E3BE0 /* DuoWanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215337621BEB7DB5008E3BE0 /* DuoWanViewController.m */; };
+		21856DC61BEC365800C5D712 /* TuWanListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21856DC51BEC365800C5D712 /* TuWanListViewController.m */; };
+		21856DC91BEC36F700C5D712 /* TuWanListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21856DC81BEC36F700C5D712 /* TuWanListCell.m */; };
+		21856DCC1BEC41A800C5D712 /* TuWanImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21856DCB1BEC41A800C5D712 /* TuWanImageCell.m */; };
 		21A9580A1BEB068200087537 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958091BEB068200087537 /* BaseNetManager.m */; };
 		21A958181BEB083500087537 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21A958151BEB083500087537 /* MBProgressHUD.bundle */; };
 		21A958191BEB083500087537 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958171BEB083500087537 /* MBProgressHUD+MJ.m */; };
@@ -38,6 +41,8 @@
 		21A958B41BEB28EF00087537 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958B31BEB28EF00087537 /* LeftViewController.m */; };
 		21A958B71BEB28FA00087537 /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958B61BEB28FA00087537 /* MyInfoViewController.m */; };
 		21A958BA1BEB29D900087537 /* DuoWanTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958B91BEB29D900087537 /* DuoWanTabBarViewController.m */; };
+		21B104641BEC7CE200459A24 /* WBImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B104631BEC7CE200459A24 /* WBImageView.m */; };
+		21B104671BEC7F4500459A24 /* TuWanWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B104661BEC7F4500459A24 /* TuWanWebView.m */; };
 		21F2C8081BE73F110085ABB8 /* DuoWanAllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C8051BE73F110085ABB8 /* DuoWanAllHeroModel.m */; };
 		21F2C8091BE73F110085ABB8 /* DuoWanFreeHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C8071BE73F110085ABB8 /* DuoWanFreeHero.m */; };
 		21F2C80C1BE73FBC0085ABB8 /* DuoWanHeroSkinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C80B1BE73FBC0085ABB8 /* DuoWanHeroSkinModel.m */; };
@@ -118,6 +123,12 @@
 		2153375C1BEB69F2008E3BE0 /* DuoWanViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoWanViewModel.m; sourceTree = "<group>"; };
 		215337611BEB7DB5008E3BE0 /* DuoWanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanViewController.h; sourceTree = "<group>"; };
 		215337621BEB7DB5008E3BE0 /* DuoWanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoWanViewController.m; sourceTree = "<group>"; };
+		21856DC41BEC365800C5D712 /* TuWanListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanListViewController.h; sourceTree = "<group>"; };
+		21856DC51BEC365800C5D712 /* TuWanListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanListViewController.m; sourceTree = "<group>"; };
+		21856DC71BEC36F700C5D712 /* TuWanListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanListCell.h; sourceTree = "<group>"; };
+		21856DC81BEC36F700C5D712 /* TuWanListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanListCell.m; sourceTree = "<group>"; };
+		21856DCA1BEC41A700C5D712 /* TuWanImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanImageCell.h; sourceTree = "<group>"; };
+		21856DCB1BEC41A800C5D712 /* TuWanImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanImageCell.m; sourceTree = "<group>"; };
 		21A958081BEB068200087537 /* BaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetManager.h; sourceTree = "<group>"; };
 		21A958091BEB068200087537 /* BaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetManager.m; sourceTree = "<group>"; };
 		21A958151BEB083500087537 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
@@ -143,6 +154,10 @@
 		21A958B61BEB28FA00087537 /* MyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfoViewController.m; sourceTree = "<group>"; };
 		21A958B81BEB29D900087537 /* DuoWanTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanTabBarViewController.h; sourceTree = "<group>"; };
 		21A958B91BEB29D900087537 /* DuoWanTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoWanTabBarViewController.m; sourceTree = "<group>"; };
+		21B104621BEC7CE200459A24 /* WBImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBImageView.h; sourceTree = "<group>"; };
+		21B104631BEC7CE200459A24 /* WBImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBImageView.m; sourceTree = "<group>"; };
+		21B104651BEC7F4500459A24 /* TuWanWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanWebView.h; sourceTree = "<group>"; };
+		21B104661BEC7F4500459A24 /* TuWanWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanWebView.m; sourceTree = "<group>"; };
 		21E07ED81BE09F0200E01938 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		21E07ED91BE09F0200E01938 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		21F2C8041BE73F110085ABB8 /* DuoWanAllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanAllHeroModel.h; sourceTree = "<group>"; };
@@ -250,10 +265,10 @@
 				210082441BDE5720007981A4 /* NetManager */,
 				210082451BDE5720007981A4 /* Resource */,
 				210082461BDE5720007981A4 /* Util */,
-				21A9581A1BEB08C100087537 /* View */,
 				21A958141BEB07E100087537 /* Vendor */,
-				2100824A1BDE5720007981A4 /* ViewController */,
+				21A9581A1BEB08C100087537 /* View */,
 				2100824D1BDE5720007981A4 /* ViewModel */,
+				2100824A1BDE5720007981A4 /* ViewController */,
 				210082691BDE59EE007981A4 /* AppDelegate.h */,
 				2100826A1BDE59EE007981A4 /* AppDelegate.m */,
 				210082101BDE5010007981A4 /* Supporting Files */,
@@ -480,6 +495,12 @@
 		21A9581C1BEB08CD00087537 /* 兔玩 */ = {
 			isa = PBXGroup;
 			children = (
+				21856DC71BEC36F700C5D712 /* TuWanListCell.h */,
+				21856DC81BEC36F700C5D712 /* TuWanListCell.m */,
+				21856DCA1BEC41A700C5D712 /* TuWanImageCell.h */,
+				21856DCB1BEC41A800C5D712 /* TuWanImageCell.m */,
+				21B104621BEC7CE200459A24 /* WBImageView.h */,
+				21B104631BEC7CE200459A24 /* WBImageView.m */,
 			);
 			path = "兔玩";
 			sourceTree = "<group>";
@@ -514,6 +535,10 @@
 			children = (
 				21A958AC1BEB28DC00087537 /* TuWanViewController.h */,
 				21A958AD1BEB28DC00087537 /* TuWanViewController.m */,
+				21856DC41BEC365800C5D712 /* TuWanListViewController.h */,
+				21856DC51BEC365800C5D712 /* TuWanListViewController.m */,
+				21B104651BEC7F4500459A24 /* TuWanWebView.h */,
+				21B104661BEC7F4500459A24 /* TuWanWebView.m */,
 			);
 			path = "兔玩";
 			sourceTree = "<group>";
@@ -815,14 +840,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21856DCC1BEC41A800C5D712 /* TuWanImageCell.m in Sources */,
 				21A958BA1BEB29D900087537 /* DuoWanTabBarViewController.m in Sources */,
 				21F2C8081BE73F110085ABB8 /* DuoWanAllHeroModel.m in Sources */,
 				21A958B11BEB28E800087537 /* XiMaViewController.m in Sources */,
+				21856DC61BEC365800C5D712 /* TuWanListViewController.m in Sources */,
 				21A958B71BEB28FA00087537 /* MyInfoViewController.m in Sources */,
 				21F2C8571BE774A40085ABB8 /* DuoWanTallyModel.m in Sources */,
 				21F2C85A1BE774BB0085ABB8 /* DuoWanEquipModel.m in Sources */,
 				2153375A1BEB47A3008E3BE0 /* TuWanViewModel.m in Sources */,
 				21F2C80C1BE73FBC0085ABB8 /* DuoWanHeroSkinModel.m in Sources */,
+				21B104671BEC7F4500459A24 /* TuWanWebView.m in Sources */,
 				21F2C8601BE782010085ABB8 /* RankingListModel.m in Sources */,
 				21F2C8421BE774480085ABB8 /* DuoWanBaiKeListModel.m in Sources */,
 				2100826B1BDE59EE007981A4 /* AppDelegate.m in Sources */,
@@ -833,6 +861,7 @@
 				21A958191BEB083500087537 /* MBProgressHUD+MJ.m in Sources */,
 				2153375D1BEB69F2008E3BE0 /* DuoWanViewModel.m in Sources */,
 				21F2C80F1BE740E70085ABB8 /* DuowanHeroVoiceModel.m in Sources */,
+				21856DC91BEC36F700C5D712 /* TuWanListCell.m in Sources */,
 				210082611BDE596E007981A4 /* AppDelegate+Category.m in Sources */,
 				21F2C8211BE74CC10085ABB8 /* DuoWanHeroChangeModel.m in Sources */,
 				210082681BDE5990007981A4 /* BaseViewModel.m in Sources */,
@@ -859,6 +888,7 @@
 				213897581BE734F00097B993 /* TuWanBaseModel.m in Sources */,
 				210082121BDE5010007981A4 /* main.m in Sources */,
 				21F2C8511BE774960085ABB8 /* DuoWanGiftModel.m in Sources */,
+				21B104641BEC7CE200459A24 /* WBImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

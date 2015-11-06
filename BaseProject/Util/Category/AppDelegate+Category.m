@@ -13,8 +13,11 @@
 @implementation AppDelegate (Category)
 
 - (void)initializeWithApplication:(UIApplication *)application{
-    //  注册DDLog 取代 NSLog
+    
     [MobClick startWithAppkey:AppKey reportPolicy:BATCH channelId:nil];
+    [MobClick setLogEnabled:YES];
+    
+    //  注册DDLog 取代 NSLog
     [DDLog addLogger:[DDASLLogger sharedInstance]];
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
