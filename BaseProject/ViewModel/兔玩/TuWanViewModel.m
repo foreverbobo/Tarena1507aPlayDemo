@@ -70,7 +70,14 @@
 {
     return arr[row];
 }
-
+-(NSString *)aidInListForRow:(NSInteger)row
+{
+    return [self modelForArr:self.dataArr row:row].aid;
+}
+-(NSString *)aidInIndexPicForRow:(NSInteger)row
+{
+    return [self modelForArr:self.indexPicArr row:row].aid;
+}
 /** 根据showtype  0 为没图   1为有图 */
 -(BOOL)containImages:(NSInteger)row
 {

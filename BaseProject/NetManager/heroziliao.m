@@ -25,7 +25,7 @@
             mutDic[string] = data;
             
         }
-        completionHandle([DuoWanHeroMaterialModel objectWithKeyValues:[mutDic copy]],error);
+        completionHandle([DuoWanHeroMaterialModel mj_objectWithKeyValues:[mutDic copy]],error);
     }];
 
 }

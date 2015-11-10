@@ -10,6 +10,7 @@
 #import <AFNetworkActivityIndicatorManager.h>
 #import "MobClick.h"
 #define AppKey @"5632e667e0f55ad3c0000fab"
+#import <MLTransition.h>
 @implementation AppDelegate (Category)
 
 - (void)initializeWithApplication:(UIApplication *)application{
@@ -39,6 +40,8 @@
         }
     }];
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    //解决因为使用leftItem 导致iOS7左划返回失效的问题
+    [MLTransition validatePanPackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypeScreenEdgePan];
 }
 
 

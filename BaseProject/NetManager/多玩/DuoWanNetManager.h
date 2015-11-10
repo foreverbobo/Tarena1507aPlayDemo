@@ -116,4 +116,7 @@ typedef NS_ENUM(NSUInteger, DuoWanHeroList) {
  *  @return 网络请求
  */
 +(id)getMediaDataArrayWithPage:(NSInteger)page Hero:(NSString *)hero completionHandle:(void(^)(NSArray *model,NSError *error))completionHandle;
+
+
+
 @end

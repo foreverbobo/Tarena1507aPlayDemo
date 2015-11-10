@@ -69,7 +69,7 @@
     }
     path = [self pathWithPercent:path params:params];
     return [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-        completionHandle([TuWanBaseModel objectWithKeyValues:responseObj],error);
+        completionHandle([TuWanBaseModel mj_objectWithKeyValues:responseObj],error);
     }];
    
 
@@ -90,6 +90,26 @@
             [percentPath appendFormat:@"&%@=%@",keys[i],patams[keys[i]]];
         }
     }
-    return [percentPath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+
+    return  [percentPath stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    //return [percentPath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+}
+
++ (id)getVideoDetailWithId:(NSString *)aid completionHandle:(void(^)(NSArray *model,NSError *error))completionHandle
+{
+    NSDictionary *params = @{kappid,@"aid":aid};
+    NSString *path = [self pathWithPercent:kTuWan params:params];
+    
+    return [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
+            completionHandle([TuWanVideoModel mj_objectArrayWithKeyValuesArray:responseObj], error);
+    }];
+}
++ (id)getPicDetailWithId:(NSString *)aid completionHandle:(void(^)(NSArray *model,NSError *error))completionHandle
+{
+    NSDictionary *params = @{kappid, @"aid": aid};
+    NSString *path = [self pathWithPercent:kTuWan params:params];
+    return [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([TuWanPicModel mj_objectArrayWithKeyValuesArray:responseObj], error);
+    }];
 }
 @end

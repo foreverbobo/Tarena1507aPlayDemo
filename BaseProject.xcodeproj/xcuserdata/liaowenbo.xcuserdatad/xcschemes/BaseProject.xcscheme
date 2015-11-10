@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "210082251BDE5010007981A4"
-               BuildableName = "BaseProjectTests.xctest"
+               BuildableName = "BaseProject.xctest"
                BlueprintName = "BaseProjectTests"
                ReferencedContainer = "container:BaseProject.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "210082301BDE5010007981A4"
-               BuildableName = "BaseProjectUITests.xctest"
+               BuildableName = "BaseProject.xctest"
                BlueprintName = "BaseProjectUITests"
                ReferencedContainer = "container:BaseProject.xcodeproj">
             </BuildableReference>

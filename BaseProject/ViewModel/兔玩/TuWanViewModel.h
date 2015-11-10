@@ -58,5 +58,8 @@
 -(BOOL)isHtmlInIndexPicForRow:(NSInteger)row;
 
 
+-(NSString *)aidInListForRow:(NSInteger)row;
+-(NSString *)aidInIndexPicForRow:(NSInteger)row;
+
 
 @end

@@ -18,7 +18,7 @@
             path = [NSString stringWithFormat:@"http://box.dwstatic.com/apiHeroSkin.php?hero=%@&v=140&OSType=iOS9.1&versionName=2.4.0",hero];
            
             task = [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-                NSArray *model = [Duowanheroskinarray objectArrayWithKeyValuesArray:responseObj];
+                NSArray *model = [Duowanheroskinarray mj_objectArrayWithKeyValuesArray:responseObj];
                 completionHandle(model,error);
                 //NSLog(@"%@",responseObj);
             }];
@@ -27,7 +27,7 @@
         case DuoWanHeroListVoiceArray: {
             path = [NSString stringWithFormat:@"http://box.dwstatic.com/apiHeroSound.php?hero=%@&v=140&OSType=iOS9.1&versionName=2.4.0",hero];
             task = [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-                NSArray *model = [NSString objectArrayWithKeyValuesArray:responseObj];
+                NSArray *model = [NSString mj_objectArrayWithKeyValuesArray:responseObj];
                 completionHandle(model,error);
             }];
             break;
@@ -35,7 +35,7 @@
         case DuoWanHeroListEquipArray: {
             path = [NSString stringWithFormat:@"http://db.duowan.com/lolcz/img/ku11/api/lolcz.php?v=140&OSType=iOS9.1&championName=%@&limit=7",hero];
             task = [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-                NSArray *model = [EquipModel objectArrayWithKeyValuesArray:responseObj];
+                NSArray *model = [EquipModel mj_objectArrayWithKeyValuesArray:responseObj];
                 completionHandle(model,error);
             }];
             break;
@@ -54,14 +54,14 @@
                     id data = responseObj[skill];
                     mutDic[string] = data;
                 }
-                completionHandle([DuoWanHeroMaterialModel objectWithKeyValues:[mutDic copy]],error);
+                completionHandle([DuoWanHeroMaterialModel mj_objectWithKeyValues:[mutDic copy]],error);
             }];
             break;
         }
         case DuoWanHeroListFuwenDapeiArray: {
             path = [NSString stringWithFormat:@"http://box.dwstatic.com/apiHeroSuggestedGiftAndRun.php?hero=%@&v=140&OSType=iOS9.1",hero];
             task = [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-                NSArray *model = [FuwendapeiModel objectArrayWithKeyValuesArray:responseObj];
+                NSArray *model = [FuwendapeiModel mj_objectArrayWithKeyValuesArray:responseObj];
                 completionHandle(model,error);
             }];
             break;
@@ -69,7 +69,7 @@
         case DuoWanHeroListChange: {
             path = [NSString stringWithFormat:@"http://db.duowan.com/boxnews/heroinfo.php?name=%@&v=140&OSType=iOS9.1",hero];
             task = [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-                completionHandle([DuoWanHeroChangeModel objectWithKeyValues:responseObj],error);
+                completionHandle([DuoWanHeroChangeModel mj_objectWithKeyValues:responseObj],error);
             }];
             break;
         }
@@ -87,14 +87,14 @@
         case DuoWanListFree: {
             path = @"http://lolbox.duowan.com/phone/apiHeroes.php?type=free&v=140&OSType=iOS9.1";
             task = [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-                completionHandle([DuoWanFreeHero objectWithKeyValues:responseObj],error);
+                completionHandle([DuoWanFreeHero mj_objectWithKeyValues:responseObj],error);
             }];
             break;
         }
         case DuoWanListAll: {
             path = @"http://lolbox.duowan.com/phone/apiHeroes.php?type=all&v=140&OSType=iOS9.1";
             task = [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-                DuoWanAllHeroModel *model = [DuoWanAllHeroModel objectWithKeyValues:responseObj];
+                DuoWanAllHeroModel *model = [DuoWanAllHeroModel mj_objectWithKeyValues:responseObj];
 
                 completionHandle(model,error);
             }];
@@ -103,7 +103,7 @@
         case DuoWanListBaiKeArray: {
             path = @"http://box.dwstatic.com/apiToolMenu.php?category=database&v=140&OSType=iOS9.1&versionName=2.4.0";
             task = [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-                NSArray *model = [BaikeListArrayDataModel objectArrayWithKeyValuesArray:responseObj];
+                NSArray *model = [BaikeListArrayDataModel mj_objectArrayWithKeyValuesArray:responseObj];
                 completionHandle(model,error);
             }];
             break;
@@ -111,7 +111,7 @@
         case DuoWanListBestGroupArray: {
             path = @"http://box.dwstatic.com/apiHeroBestGroup.php?v=140&OSType=iOS9.1";
             task = [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-                NSArray *model = [GroupDataModel objectArrayWithKeyValuesArray:responseObj];
+                NSArray *model = [GroupDataModel mj_objectArrayWithKeyValuesArray:responseObj];
                 completionHandle(model,error);
             }];
             break;
@@ -119,7 +119,7 @@
         case DuoWanListEquipListArray: {
             path = @"http://lolbox.duowan.com/phone/apiZBCategory.php?v=140&OSType=iOS9.1&versionName=2.4.0";
             task = [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-                NSArray *model = [EquipArrayDataModel objectArrayWithKeyValuesArray:responseObj];
+                NSArray *model = [EquipArrayDataModel mj_objectArrayWithKeyValuesArray:responseObj];
                 completionHandle(model,error);
             }];
             break;
@@ -129,7 +129,7 @@
             path = @"http://lolbox.duowan.com/phone/apiGift.php?v=140&OSType=iOS9.1";
             task = [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
               //  NSLog(@"%@",responseObj);
-                DuoWanGiftModel *model = [DuoWanGiftModel objectWithKeyValues:responseObj];
+                DuoWanGiftModel *model = [DuoWanGiftModel mj_objectWithKeyValues:responseObj];
                 completionHandle(model,error);
             }];
             break;
@@ -137,7 +137,7 @@
         case DuoWanListSkillArray: {
             path = @"http://lolbox.duowan.com/phone/apiSumAbility.php?v=140&OSType=iOS9.1";
             task = [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-                NSArray *model = [SkillDataModel objectArrayWithKeyValuesArray:responseObj];
+                NSArray *model = [SkillDataModel mj_objectArrayWithKeyValuesArray:responseObj];
                 completionHandle(model,error);
             }];
             break;
@@ -145,7 +145,7 @@
         case DuoWanListTally: {
             path = @"http://lolbox.duowan.com/phone/apiRunes.php?v=140&OSType=iOS9.1";
             task = [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-                DuoWanTallyModel *model = [DuoWanTallyModel objectWithKeyValues:responseObj];
+                DuoWanTallyModel *model = [DuoWanTallyModel mj_objectWithKeyValues:responseObj];
                 completionHandle(model,error);
             }];
             break;
@@ -164,7 +164,7 @@
 {
     NSString *path = [NSString stringWithFormat:@"http://lolbox.duowan.com/phone/apiZBItemList.php?tag=%@&v=140&OSType=iOS9.1&versionName=2.4.0",tag];
     return [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-        NSArray *model = [EquipDataModel objectArrayWithKeyValuesArray:responseObj];
+        NSArray *model = [EquipDataModel mj_objectArrayWithKeyValuesArray:responseObj];
         completionHandle(model,error);
     }];
 
@@ -173,7 +173,7 @@
 {
     NSString *path = [NSString stringWithFormat:@"http://lolbox.duowan.com/phone/apiItemDetail.php?id=%ld&v=140&OSType=iOS9.1",Id];
     return [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-        DuoWanEquipPropetyModel *model = [DuoWanEquipPropetyModel objectWithKeyValues:responseObj];
+        DuoWanEquipPropetyModel *model = [DuoWanEquipPropetyModel mj_objectWithKeyValues:responseObj];
         completionHandle(model,error);
     }];
 }
@@ -181,14 +181,14 @@
 {
     NSString *path = [NSString stringWithFormat:@"http://183.61.12.108/apiHeroWeekData.php?heroId=%ld",heroId];
     return [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-        completionHandle([DuoWanWeekDataModel objectWithKeyValues:responseObj],error);
+        completionHandle([DuoWanWeekDataModel mj_objectWithKeyValues:responseObj],error);
     }];
 }
 +(id)getMediaDataArrayWithPage:(NSInteger)page Hero:(NSString *)hero completionHandle:(void(^)(NSArray * ,NSError *))completionHandle
 {
     NSString *path = [NSString stringWithFormat:@"http://box.dwstatic.com/apiVideoesNormalDuowan.php?action=l&p=%ld&v=140&OSType=iOS9.1&tag=%@&src=letv",page,hero];
     return  [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-        NSArray *model = [Duowanheroskinarray objectArrayWithKeyValuesArray:responseObj];
+        NSArray *model = [Duowanheroskinarray mj_objectArrayWithKeyValuesArray:responseObj];
         completionHandle(model,error);
     }];
 

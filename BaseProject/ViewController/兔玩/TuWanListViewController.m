@@ -10,6 +10,7 @@
 #import "TuWanListCell.h"
 #import "TuWanImageCell.h"
 #import "TuWanWebView.h"
+#import "TuWanPicViewController.h"
 @interface TuWanListViewController ()<iCarouselDelegate,iCarouselDataSource>
 @property (nonatomic,strong)TuWanViewModel *tuwanVM;
 @end
@@ -131,6 +132,11 @@
         TuWanWebView *webview = [[TuWanWebView alloc]initWithURL:url];
         [self.navigationController pushViewController:webview animated:YES];
     }
+    else if ([self.tuwanVM isPicInIndexPicForRow:index])
+    {
+        TuWanPicViewController *vc = [[TuWanPicViewController alloc]initWithAid:[self.tuwanVM aidInIndexPicForRow:index]];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
     
 }
 
@@ -155,19 +161,19 @@
     [super viewDidLoad];
     [self.tableView registerClass:[TuWanListCell class] forCellReuseIdentifier:@"ListCell"];
     [self.tableView registerClass:[TuWanImageCell class] forCellReuseIdentifier:@"ImageCell"];
-    self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self.tuwanVM refreshDataCompletionHandle:^(NSError *error) {
-            [self.tableView.header endRefreshing];
+            [self.tableView.mj_header endRefreshing];
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.tableView.tableHeaderView = [self headerView];
                 [self.tableView reloadData];
             });
         }];
     }];
-    [self.tableView.header beginRefreshing];
-    self.tableView.footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+    [self.tableView.mj_header beginRefreshing];
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
         [self.tuwanVM getMoreDataCompletionHandle:^(NSError *error) {
-            [self.tableView.footer endRefreshing];
+            [self.tableView.mj_footer endRefreshing];
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.tableView.tableHeaderView = [self headerView];
                 [self.tableView reloadData];
@@ -225,6 +231,11 @@ kRemoveCellSeparator
         NSURL *url = [self.tuwanVM htmlURLForRowInList:indexPath.row];
         TuWanWebView *webview = [[TuWanWebView alloc]initWithURL:url];
         [self.navigationController pushViewController:webview animated:YES];
+    }
+    else if ([self.tuwanVM isPicInListForRow:indexPath.row])
+    {
+        TuWanPicViewController *vc = [[TuWanPicViewController alloc]initWithAid:[self.tuwanVM aidInListForRow:indexPath.row]];
+        [self.navigationController pushViewController:vc animated:YES];
     }
     
     

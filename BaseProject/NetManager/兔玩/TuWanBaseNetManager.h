@@ -8,6 +8,8 @@
 
 #import "BaseNetManager.h"
 #import "TuWanBaseModel.h"
+#import "TuWanPicModel.h"
+#import "TuWanVideoModel.h"
 typedef NS_ENUM(NSUInteger, TuWanListType) {
     TuWanListTypeToutiao,
     TuWanListTypeDujia,
@@ -37,4 +39,6 @@ typedef NS_ENUM(NSUInteger, TuWanListType) {
  *  @return 网络请求任务
  */
 +(id)getListWithType:(TuWanListType)type start:(NSInteger)start completionHandle:(void(^)(TuWanBaseModel *model,NSError *error))completionHandle;
++ (id)getVideoDetailWithId:(NSString *)aid completionHandle:(void(^)(NSArray *model,NSError *error))completionHandle;
++ (id)getPicDetailWithId:(NSString *)aid completionHandle:(void(^)(NSArray *model,NSError *error))completionHandle;
 @end

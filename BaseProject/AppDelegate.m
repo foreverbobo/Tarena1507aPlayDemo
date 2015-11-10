@@ -11,6 +11,7 @@
 #import "TuWanViewController.h"
 #import "TuWanBaseNetManager.h"
 #import "DuoWanViewController.h"
+#import "XiMaViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -34,7 +35,7 @@
 {
     if(!_sideMenu)
     {
-        _sideMenu = [[RESideMenu alloc]initWithContentViewController:[TuWanViewController standardTuWanNavi] leftMenuViewController:[DuoWanViewController new] rightMenuViewController:nil];
+        _sideMenu = [[RESideMenu alloc]initWithContentViewController:[TuWanViewController standardTuWanNavi] leftMenuViewController:[LeftViewController new] rightMenuViewController:nil];
         //为sidemenu 设置 背景图
         _sideMenu.backgroundImage = [UIImage imageNamed:@"a4825652"];
     }
