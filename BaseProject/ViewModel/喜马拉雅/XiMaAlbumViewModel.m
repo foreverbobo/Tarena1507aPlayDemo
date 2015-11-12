@@ -9,7 +9,7 @@
 #import "XiMaAlbumViewModel.h"
 
 @implementation XiMaAlbumViewModel
--(id)initWithAlbumID:(NSInteger)albumID
+-(instancetype)initWithAlbumID:(NSInteger)albumID
 {
     if(self = [super init])
     {
@@ -24,8 +24,19 @@
 }
 -(void)getMoreDataCompletionHandle:(CompletionHandle)completionHandle
 {
-    self.page ++;
-    [self getDataFromNetCompleteHandle:completionHandle];
+    if([self isHasMore])
+    {
+        self.page ++;
+        [self getDataFromNetCompleteHandle:completionHandle];
+    }
+    else
+    {
+        NSError *error = [NSError errorWithDomain:@"" code:999 userInfo:@{NSLocalizedDescriptionKey:@"没有加载内容了"}];
+        completionHandle(error);
+        return;
+    
+    }
+    
 }
 -(void)getDataFromNetCompleteHandle:(CompletionHandle)completionHandle
 {
@@ -36,6 +47,7 @@
         }
         AlbumModel *models = model;
         [self.dataArr addObjectsFromArray:models.tracks.list];
+        self.maxPage = models.tracks.maxPageId;
         completionHandle(error);
     }];
 
@@ -60,19 +72,28 @@
     return [NSString stringWithFormat:@"by %@",[self modelForRow:row].nickname];
 }
 /** 喜欢个数 */
--(NSInteger)likeNumberForRow:(NSInteger)row
+-(NSString *)likeNumberForRow:(NSInteger)row
 {
-    return [self modelForRow:row].likes;
+    return @([self modelForRow:row].likes).stringValue ;
 }
 /** 播放次数 */
--(NSInteger)playtimesNumberForRow:(NSInteger)row
+-(NSString *)playtimesNumberForRow:(NSInteger)row
 {
-    return [self modelForRow:row].playtimes;
+    NSInteger count = [self modelForRow:row].playtimes;
+    if(count < 10000)
+    {
+        return @([self modelForRow:row].playtimes).stringValue;
+    }
+    else
+    {
+        return [NSString stringWithFormat:@"%.1f万",count/10000.0];
+    }
+    
 }
 /** 评论次数 */
--(NSInteger)commentsForRow:(NSInteger)row
+-(NSString *)commentsForRow:(NSInteger)row
 {
-    return [self modelForRow:row].comments;
+    return @([self modelForRow:row].comments).stringValue;
 }
 /** 播放时长 */
 -(NSString *)durationForRow:(NSInteger)row
@@ -83,8 +104,8 @@
 /** 更新时间 */
 -(NSString *)updateForRow:(NSInteger)row
 {
-    NSInteger time = [self modelForRow:row].createdAt;
-    NSInteger nowTime = [[NSDate date]timeIntervalSince1970];
+    NSInteger time = [self modelForRow:row].createdAt/1000;
+    NSInteger nowTime = [[NSDate date]timeIntervalSince1970];//[[NSDate date]timeIntervalSince1970];
     NSInteger result = nowTime - time;
     if(result/86400 > 1)
     {
@@ -94,5 +115,23 @@
     {
         return [NSString stringWithFormat:@"%ld小时前",result/3600];
     }
+}
+/** 获取下载链接地址 */
+-(NSURL *)downLoadUrlForRow:(NSInteger)row
+{
+    return [NSURL URLWithString:[self modelForRow:row].downloadUrl];
+}
+/** 获取某行音频播放地址 */
+-(NSURL *)videoUrlForRow:(NSInteger)row
+{
+    return [NSURL URLWithString:[self modelForRow:row].playUrl64];
+}
+-(BOOL)isHasMore
+{
+    return self.maxPage > self.page;
+}
+-(NSInteger)rowNumber
+{
+    return self.dataArr.count;
 }
 @end

@@ -17,18 +17,26 @@
 /** 所属专辑名 */
 -(NSString *)nickTitleForRow:(NSInteger)row;
 /** 喜欢个数 */
--(NSInteger)likeNumberForRow:(NSInteger)row;
+-(NSString *)likeNumberForRow:(NSInteger)row;
 /** 播放次数 */
--(NSInteger)playtimesNumberForRow:(NSInteger)row;
+-(NSString *)playtimesNumberForRow:(NSInteger)row;
 /** 评论次数 */
--(NSInteger)commentsForRow:(NSInteger)row;
+-(NSString *)commentsForRow:(NSInteger)row;
 /** 播放时长 */
 -(NSString *)durationForRow:(NSInteger)row;
 /** 更新时间 */
 -(NSString *)updateForRow:(NSInteger)row;
+/** 获取下载链接地址 */
+-(NSURL *)downLoadUrlForRow:(NSInteger)row;
+/** 获取某行音频播放地址 */
+-(NSURL *)videoUrlForRow:(NSInteger)row;
+
 
 @property (nonatomic,assign)NSInteger albumID;
 @property (nonatomic,assign)NSInteger page;
--(id)initWithAlbumID:(NSInteger)albumID;
+@property (nonatomic,assign)NSInteger maxPage;
+@property (nonatomic,getter=isHasMore)BOOL hasMore;
+-(instancetype)initWithAlbumID:(NSInteger)albumID NS_DESIGNATED_INITIALIZER;
+
 
 @end

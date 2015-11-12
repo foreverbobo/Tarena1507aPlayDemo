@@ -9,6 +9,7 @@
 #import "XiMaViewController.h"
 #import "XiMaViewModel.h"
 #import "XiMaCategoryCell.h"
+#import "MusicListViewController.h"
 @interface XiMaViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)XiMaViewModel *ximaVM;
@@ -105,6 +106,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSInteger albumId = [self.ximaVM albumIdForRow:indexPath.row];
+    MusicListViewController *vc = [[MusicListViewController alloc]initWithAlbumId:albumId];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {

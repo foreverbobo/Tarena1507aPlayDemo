@@ -24,5 +24,6 @@
 
 @property (nonatomic, copy) NSString *tag;
 
+@property (nonatomic, copy) NSString *url;
 @end
 

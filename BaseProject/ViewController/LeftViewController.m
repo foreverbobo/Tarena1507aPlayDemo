@@ -11,6 +11,7 @@
 #import "TuWanViewController.h"
 #import "DuoWanViewController.h"
 #import "XiMaViewController.h"
+#import "DuoWanTabBarViewController.h"
 @interface LeftViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)NSArray *itemsNames;
@@ -68,6 +69,8 @@
         case 1:
             [self.sideMenuViewController setContentViewController:[XiMaViewController defaultNavi] animated:YES];
             break;
+        case 2:
+            [self.sideMenuViewController setContentViewController:[DuoWanTabBarViewController standardInstanse]];
         default:
             break;
     }

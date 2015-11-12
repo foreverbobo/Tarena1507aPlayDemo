@@ -37,7 +37,9 @@
     {
         _sideMenu = [[RESideMenu alloc]initWithContentViewController:[TuWanViewController standardTuWanNavi] leftMenuViewController:[LeftViewController new] rightMenuViewController:nil];
         //为sidemenu 设置 背景图
-        _sideMenu.backgroundImage = [UIImage imageNamed:@"a4825652"];
+        _sideMenu.backgroundImage = [UIImage imageNamed:@"10979716_0800"];
+        //不允许菜单栏继续缩小
+        _sideMenu.bouncesHorizontally = NO;
     }
     return _sideMenu;
 }

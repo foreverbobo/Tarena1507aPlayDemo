@@ -30,6 +30,15 @@
 		21856DC61BEC365800C5D712 /* TuWanListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21856DC51BEC365800C5D712 /* TuWanListViewController.m */; };
 		21856DC91BEC36F700C5D712 /* TuWanListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21856DC81BEC36F700C5D712 /* TuWanListCell.m */; };
 		21856DCC1BEC41A800C5D712 /* TuWanImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21856DCB1BEC41A800C5D712 /* TuWanImageCell.m */; };
+		218A27531BF2CDEB0073A363 /* HeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218A27521BF2CDEB0073A363 /* HeroViewController.m */; };
+		218A27561BF2CE1A0073A363 /* BaiKeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218A27551BF2CE1A0073A363 /* BaiKeViewController.m */; };
+		218A27591BF2CE390073A363 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218A27581BF2CE390073A363 /* SearchViewController.m */; };
+		218A275C1BF2D9210073A363 /* SearchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218A275B1BF2D9210073A363 /* SearchDetailViewController.m */; };
+		218A275F1BF2E73F0073A363 /* ToolMenuViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 218A275E1BF2E73F0073A363 /* ToolMenuViewModel.m */; };
+		218A27621BF32A5E0073A363 /* BaiKeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218A27611BF32A5E0073A363 /* BaiKeWebViewController.m */; };
+		218A27651BF32FB30073A363 /* HeroIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 218A27641BF32FB30073A363 /* HeroIconView.m */; };
+		218A27681BF3310D0073A363 /* BestGoupCellCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 218A27671BF3310D0073A363 /* BestGoupCellCell.m */; };
+		218A276B1BF335FF0073A363 /* DuoWanBestGoupViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 218A276A1BF335FF0073A363 /* DuoWanBestGoupViewModel.m */; };
 		21A9580A1BEB068200087537 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958091BEB068200087537 /* BaseNetManager.m */; };
 		21A958181BEB083500087537 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21A958151BEB083500087537 /* MBProgressHUD.bundle */; };
 		21A958191BEB083500087537 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958171BEB083500087537 /* MBProgressHUD+MJ.m */; };
@@ -43,8 +52,13 @@
 		21A958B41BEB28EF00087537 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958B31BEB28EF00087537 /* LeftViewController.m */; };
 		21A958B71BEB28FA00087537 /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958B61BEB28FA00087537 /* MyInfoViewController.m */; };
 		21A958BA1BEB29D900087537 /* DuoWanTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958B91BEB29D900087537 /* DuoWanTabBarViewController.m */; };
+		21AF83651BF1CB83006E883C /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF83641BF1CB83006E883C /* MusicListViewController.m */; };
+		21AF83671BF1DF38006E883C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AF83661BF1DF38006E883C /* AVFoundation.framework */; };
+		21AF836A1BF1DF5E006E883C /* PlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF83691BF1DF5E006E883C /* PlayView.m */; };
 		21B104641BEC7CE200459A24 /* WBImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B104631BEC7CE200459A24 /* WBImageView.m */; };
 		21B104671BEC7F4500459A24 /* TuWanWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B104661BEC7F4500459A24 /* TuWanWebView.m */; };
+		21E4A9931BF34F3A008E5EAE /* BestGoupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E4A9921BF34F3A008E5EAE /* BestGoupViewController.m */; };
+		21E4A9961BF357BB008E5EAE /* BestGroupDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E4A9951BF357BB008E5EAE /* BestGroupDetailViewController.m */; };
 		21F2C8081BE73F110085ABB8 /* DuoWanAllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C8051BE73F110085ABB8 /* DuoWanAllHeroModel.m */; };
 		21F2C8091BE73F110085ABB8 /* DuoWanFreeHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C8071BE73F110085ABB8 /* DuoWanFreeHero.m */; };
 		21F2C80C1BE73FBC0085ABB8 /* DuoWanHeroSkinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F2C80B1BE73FBC0085ABB8 /* DuoWanHeroSkinModel.m */; };
@@ -141,6 +155,25 @@
 		21856DC81BEC36F700C5D712 /* TuWanListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanListCell.m; sourceTree = "<group>"; };
 		21856DCA1BEC41A700C5D712 /* TuWanImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanImageCell.h; sourceTree = "<group>"; };
 		21856DCB1BEC41A800C5D712 /* TuWanImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanImageCell.m; sourceTree = "<group>"; };
+		218A27511BF2CDEB0073A363 /* HeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroViewController.h; sourceTree = "<group>"; };
+		218A27521BF2CDEB0073A363 /* HeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroViewController.m; sourceTree = "<group>"; };
+		218A27541BF2CE1A0073A363 /* BaiKeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiKeViewController.h; sourceTree = "<group>"; };
+		218A27551BF2CE1A0073A363 /* BaiKeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiKeViewController.m; sourceTree = "<group>"; };
+		218A27571BF2CE390073A363 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		218A27581BF2CE390073A363 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		218A275A1BF2D9210073A363 /* SearchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDetailViewController.h; sourceTree = "<group>"; };
+		218A275B1BF2D9210073A363 /* SearchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDetailViewController.m; sourceTree = "<group>"; };
+		218A275D1BF2E73F0073A363 /* ToolMenuViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolMenuViewModel.h; sourceTree = "<group>"; };
+		218A275E1BF2E73F0073A363 /* ToolMenuViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolMenuViewModel.m; sourceTree = "<group>"; };
+		218A27601BF32A5E0073A363 /* BaiKeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiKeWebViewController.h; sourceTree = "<group>"; };
+		218A27611BF32A5E0073A363 /* BaiKeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiKeWebViewController.m; sourceTree = "<group>"; };
+		218A27631BF32FB30073A363 /* HeroIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroIconView.h; sourceTree = "<group>"; };
+		218A27641BF32FB30073A363 /* HeroIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroIconView.m; sourceTree = "<group>"; };
+		218A27661BF3310D0073A363 /* BestGoupCellCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGoupCellCell.h; sourceTree = "<group>"; };
+		218A27671BF3310D0073A363 /* BestGoupCellCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestGoupCellCell.m; sourceTree = "<group>"; };
+		218A27691BF335FF0073A363 /* DuoWanBestGoupViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanBestGoupViewModel.h; sourceTree = "<group>"; };
+		218A276A1BF335FF0073A363 /* DuoWanBestGoupViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoWanBestGoupViewModel.m; sourceTree = "<group>"; };
+		219BB3441BF1E7E000A3B9A0 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		21A958081BEB068200087537 /* BaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetManager.h; sourceTree = "<group>"; };
 		21A958091BEB068200087537 /* BaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetManager.m; sourceTree = "<group>"; };
 		21A958151BEB083500087537 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
@@ -166,12 +199,21 @@
 		21A958B61BEB28FA00087537 /* MyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfoViewController.m; sourceTree = "<group>"; };
 		21A958B81BEB29D900087537 /* DuoWanTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanTabBarViewController.h; sourceTree = "<group>"; };
 		21A958B91BEB29D900087537 /* DuoWanTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoWanTabBarViewController.m; sourceTree = "<group>"; };
+		21AF83631BF1CB83006E883C /* MusicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListViewController.h; sourceTree = "<group>"; };
+		21AF83641BF1CB83006E883C /* MusicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListViewController.m; sourceTree = "<group>"; };
+		21AF83661BF1DF38006E883C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		21AF83681BF1DF5E006E883C /* PlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayView.h; sourceTree = "<group>"; };
+		21AF83691BF1DF5E006E883C /* PlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayView.m; sourceTree = "<group>"; };
 		21B104621BEC7CE200459A24 /* WBImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBImageView.h; sourceTree = "<group>"; };
 		21B104631BEC7CE200459A24 /* WBImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBImageView.m; sourceTree = "<group>"; };
 		21B104651BEC7F4500459A24 /* TuWanWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanWebView.h; sourceTree = "<group>"; };
 		21B104661BEC7F4500459A24 /* TuWanWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanWebView.m; sourceTree = "<group>"; };
 		21E07ED81BE09F0200E01938 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		21E07ED91BE09F0200E01938 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		21E4A9911BF34F3A008E5EAE /* BestGoupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGoupViewController.h; sourceTree = "<group>"; };
+		21E4A9921BF34F3A008E5EAE /* BestGoupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestGoupViewController.m; sourceTree = "<group>"; };
+		21E4A9941BF357BB008E5EAE /* BestGroupDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupDetailViewController.h; sourceTree = "<group>"; };
+		21E4A9951BF357BB008E5EAE /* BestGroupDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestGroupDetailViewController.m; sourceTree = "<group>"; };
 		21F2C8041BE73F110085ABB8 /* DuoWanAllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanAllHeroModel.h; sourceTree = "<group>"; };
 		21F2C8051BE73F110085ABB8 /* DuoWanAllHeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoWanAllHeroModel.m; sourceTree = "<group>"; };
 		21F2C8061BE73F110085ABB8 /* DuoWanFreeHero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanFreeHero.h; sourceTree = "<group>"; };
@@ -236,6 +278,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21AF83671BF1DF38006E883C /* AVFoundation.framework in Frameworks */,
 				21A9583F1BEB0AFF00087537 /* libz.tbd in Frameworks */,
 				AAC4218EB872F5A0FFCA0F3E /* libPods-BaseProject.a in Frameworks */,
 				21A9583D1BEB0ACE00087537 /* libMobClickLibrary.a in Frameworks */,
@@ -516,6 +559,10 @@
 		21A9581B1BEB08CD00087537 /* 多玩 */ = {
 			isa = PBXGroup;
 			children = (
+				218A27631BF32FB30073A363 /* HeroIconView.h */,
+				218A27641BF32FB30073A363 /* HeroIconView.m */,
+				218A27661BF3310D0073A363 /* BestGoupCellCell.h */,
+				218A27671BF3310D0073A363 /* BestGoupCellCell.m */,
 			);
 			path = "多玩";
 			sourceTree = "<group>";
@@ -547,6 +594,8 @@
 				21FB78061BF0496F00E7C187 /* XiMaCategoryCell.m */,
 				210BAD211BF0AF000069D965 /* XiMaTracksCell.h */,
 				210BAD221BF0AF000069D965 /* XiMaTracksCell.m */,
+				21AF83681BF1DF5E006E883C /* PlayView.h */,
+				21AF83691BF1DF5E006E883C /* PlayView.m */,
 			);
 			path = "喜马拉雅";
 			sourceTree = "<group>";
@@ -556,6 +605,20 @@
 			children = (
 				21A958B81BEB29D900087537 /* DuoWanTabBarViewController.h */,
 				21A958B91BEB29D900087537 /* DuoWanTabBarViewController.m */,
+				218A27511BF2CDEB0073A363 /* HeroViewController.h */,
+				218A27521BF2CDEB0073A363 /* HeroViewController.m */,
+				218A27541BF2CE1A0073A363 /* BaiKeViewController.h */,
+				218A27551BF2CE1A0073A363 /* BaiKeViewController.m */,
+				218A27601BF32A5E0073A363 /* BaiKeWebViewController.h */,
+				218A27611BF32A5E0073A363 /* BaiKeWebViewController.m */,
+				21E4A9911BF34F3A008E5EAE /* BestGoupViewController.h */,
+				21E4A9921BF34F3A008E5EAE /* BestGoupViewController.m */,
+				21E4A9941BF357BB008E5EAE /* BestGroupDetailViewController.h */,
+				21E4A9951BF357BB008E5EAE /* BestGroupDetailViewController.m */,
+				218A27571BF2CE390073A363 /* SearchViewController.h */,
+				218A27581BF2CE390073A363 /* SearchViewController.m */,
+				218A275A1BF2D9210073A363 /* SearchDetailViewController.h */,
+				218A275B1BF2D9210073A363 /* SearchDetailViewController.m */,
 				215337611BEB7DB5008E3BE0 /* DuoWanViewController.h */,
 				215337621BEB7DB5008E3BE0 /* DuoWanViewController.m */,
 			);
@@ -591,6 +654,8 @@
 			children = (
 				21A958AF1BEB28E800087537 /* XiMaViewController.h */,
 				21A958B01BEB28E800087537 /* XiMaViewController.m */,
+				21AF83631BF1CB83006E883C /* MusicListViewController.h */,
+				21AF83641BF1CB83006E883C /* MusicListViewController.m */,
 			);
 			path = "喜马拉雅";
 			sourceTree = "<group>";
@@ -600,6 +665,10 @@
 			children = (
 				2153375B1BEB69F2008E3BE0 /* DuoWanViewModel.h */,
 				2153375C1BEB69F2008E3BE0 /* DuoWanViewModel.m */,
+				218A275D1BF2E73F0073A363 /* ToolMenuViewModel.h */,
+				218A275E1BF2E73F0073A363 /* ToolMenuViewModel.m */,
+				218A27691BF335FF0073A363 /* DuoWanBestGoupViewModel.h */,
+				218A276A1BF335FF0073A363 /* DuoWanBestGoupViewModel.m */,
 			);
 			path = "多玩";
 			sourceTree = "<group>";
@@ -689,6 +758,8 @@
 		B7D328B1C9CCDAE0CFEA528A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				219BB3441BF1E7E000A3B9A0 /* AVKit.framework */,
+				21AF83661BF1DF38006E883C /* AVFoundation.framework */,
 				21A9583E1BEB0AFF00087537 /* libz.tbd */,
 				5F3C1C80398B345D901DD789 /* libPods-BaseProject.a */,
 			);
@@ -883,6 +954,7 @@
 				21856DCC1BEC41A800C5D712 /* TuWanImageCell.m in Sources */,
 				21FB78041BF0311F00E7C187 /* TuWanPicViewController.m in Sources */,
 				21A958BA1BEB29D900087537 /* DuoWanTabBarViewController.m in Sources */,
+				21E4A9961BF357BB008E5EAE /* BestGroupDetailViewController.m in Sources */,
 				21F2C8081BE73F110085ABB8 /* DuoWanAllHeroModel.m in Sources */,
 				210BAD231BF0AF000069D965 /* XiMaTracksCell.m in Sources */,
 				21A958B11BEB28E800087537 /* XiMaViewController.m in Sources */,
@@ -891,7 +963,9 @@
 				21F2C8571BE774A40085ABB8 /* DuoWanTallyModel.m in Sources */,
 				21F2C85A1BE774BB0085ABB8 /* DuoWanEquipModel.m in Sources */,
 				2153375A1BEB47A3008E3BE0 /* TuWanViewModel.m in Sources */,
+				218A27561BF2CE1A0073A363 /* BaiKeViewController.m in Sources */,
 				21F2C80C1BE73FBC0085ABB8 /* DuoWanHeroSkinModel.m in Sources */,
+				21AF83651BF1CB83006E883C /* MusicListViewController.m in Sources */,
 				21B104671BEC7F4500459A24 /* TuWanWebView.m in Sources */,
 				21F2C8601BE782010085ABB8 /* RankingListModel.m in Sources */,
 				21F2C8421BE774480085ABB8 /* DuoWanBaiKeListModel.m in Sources */,
@@ -902,10 +976,16 @@
 				21F2C8181BE743320085ABB8 /* DuoWanHeroMaterialModel.m in Sources */,
 				21A958191BEB083500087537 /* MBProgressHUD+MJ.m in Sources */,
 				21FB78011BF02C9700E7C187 /* TuWanVideoModel.m in Sources */,
+				218A27681BF3310D0073A363 /* BestGoupCellCell.m in Sources */,
 				21FB77FE1BF02A2300E7C187 /* TuWanPicModel.m in Sources */,
+				21AF836A1BF1DF5E006E883C /* PlayView.m in Sources */,
 				2153375D1BEB69F2008E3BE0 /* DuoWanViewModel.m in Sources */,
+				218A275C1BF2D9210073A363 /* SearchDetailViewController.m in Sources */,
 				21F2C80F1BE740E70085ABB8 /* DuowanHeroVoiceModel.m in Sources */,
+				218A27651BF32FB30073A363 /* HeroIconView.m in Sources */,
+				218A276B1BF335FF0073A363 /* DuoWanBestGoupViewModel.m in Sources */,
 				21FB77FB1BF029E200E7C187 /* TuWanPicViewModel.m in Sources */,
+				218A27531BF2CDEB0073A363 /* HeroViewController.m in Sources */,
 				21856DC91BEC36F700C5D712 /* TuWanListCell.m in Sources */,
 				210082611BDE596E007981A4 /* AppDelegate+Category.m in Sources */,
 				21F2C8211BE74CC10085ABB8 /* DuoWanHeroChangeModel.m in Sources */,
@@ -918,13 +998,17 @@
 				21A958331BEB096100087537 /* XiMaNetManager.m in Sources */,
 				21A958B41BEB28EF00087537 /* LeftViewController.m in Sources */,
 				210082641BDE596E007981A4 /* NSString+PJR.m in Sources */,
+				218A27591BF2CE390073A363 /* SearchViewController.m in Sources */,
 				21F2C84E1BE7748C0085ABB8 /* DuoWanEquipPropetyModel.m in Sources */,
+				218A275F1BF2E73F0073A363 /* ToolMenuViewModel.m in Sources */,
 				21F2C8091BE73F110085ABB8 /* DuoWanFreeHero.m in Sources */,
 				21F2C8561BE774A40085ABB8 /* DuoWanSkillModel.m in Sources */,
 				210082651BDE596E007981A4 /* NSString+QRCode.m in Sources */,
+				21E4A9931BF34F3A008E5EAE /* BestGoupViewController.m in Sources */,
 				21A9580A1BEB068200087537 /* BaseNetManager.m in Sources */,
 				21FB78071BF0496F00E7C187 /* XiMaCategoryCell.m in Sources */,
 				21F2C81B1BE74AEA0085ABB8 /* DuoWanHeroFuwenDaPeiModel.m in Sources */,
+				218A27621BF32A5E0073A363 /* BaiKeWebViewController.m in Sources */,
 				215337571BEB4425008E3BE0 /* FactoryClass.m in Sources */,
 				21F2C8481BE774610085ABB8 /* DuoWanEquipListModel.m in Sources */,
 				210082541BDE5933007981A4 /* BaseModel.m in Sources */,
