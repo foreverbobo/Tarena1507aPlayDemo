@@ -10,6 +10,9 @@
 #import "ToolMenuViewModel.h"
 #import "BaiKeWebViewController.h"
 #import "BestGoupViewController.h"
+#import "ZBListViewController.h"
+#import "SkillCollectionViewController.h"
+#import "EquipCollectionLayout.h"
 @interface ToolMenuCell : UITableViewCell
 @property (nonatomic,strong)UIImageView *iconIV;
 @property (nonatomic,strong)UILabel *titleLb;
@@ -138,7 +141,9 @@
             NSString *tag = [self.toolVM tagForRow:indexPath.row];
             if([tag isEqualToString:@"item"])
             {
-                NSLog(@"111");
+                ZBListViewController *vc = [ZBListViewController new];
+                vc.hidesBottomBarWhenPushed = YES;
+                [self.navigationController pushViewController:vc animated:YES];
             }
             else if([tag isEqualToString:@"gift"])
             {
@@ -151,11 +156,15 @@
             else if([tag isEqualToString:@"best_group"])
             {
                 BestGoupViewController *vc = [BestGoupViewController new];
+                vc.hidesBottomBarWhenPushed = YES;
                 [self.navigationController pushViewController:vc animated:YES];
             }
             else if([tag isEqualToString:@"sum_ability"])
             {
-                NSLog(@"555");
+                EquipCollectionLayout *layout = [EquipCollectionLayout new];
+                SkillCollectionViewController *vc = [[SkillCollectionViewController alloc]initWithCollectionViewLayout:layout];
+                vc.hidesBottomBarWhenPushed = YES;
+                [self.navigationController pushViewController:vc animated:YES];
             }
             else
             {

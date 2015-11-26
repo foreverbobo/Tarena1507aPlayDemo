@@ -32,4 +32,9 @@ cell.preservesSuperviewLayoutMargins = NO; \
 //Docment文件夹目录
 #define kDocumentPath NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject
 #define kNaviTitleFontSize 20.0
+
+#define AppKey @"5632e667e0f55ad3c0000fab"
+#define WeChatAPPID @"wxb146f4ef03cb7926"
+#define WeChatAPPSecret @"d4624c36b6795d1d99dcf0547af5443d"
+#import "UMSocial.h"
 #endif /* Constants_h */

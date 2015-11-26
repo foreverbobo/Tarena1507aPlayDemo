@@ -35,4 +35,16 @@
     NSString *path = [NSString stringWithFormat:@"http://img.lolbox.duowan.com/champions/%@_120x120.jpg",heroName];
     [self.imageView setImageWithURL:[NSURL URLWithString:path] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_7"]];
 }
+-(void)setEquipId:(NSInteger)equipId
+{
+    _equipId = equipId;
+    NSString *path = [NSString stringWithFormat:@"http://img.lolbox.duowan.com/zb/%ld_64x64.png",equipId];
+    [self.imageView setImageWithURL:[NSURL URLWithString:path] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_7"]];
+}
+-(void)setSkillId:(NSString *)skillId
+{
+    _skillId = skillId;
+    NSString *path = [NSString stringWithFormat:@"http://img.lolbox.duowan.com/spells/png/%@.png",skillId];
+    [self.imageView setImageWithURL:[NSURL URLWithString:path] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_7"]];
+}
 @end

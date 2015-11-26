@@ -9,11 +9,25 @@
 #import "AppDelegate+Category.h"
 #import <AFNetworkActivityIndicatorManager.h>
 #import "MobClick.h"
-#define AppKey @"5632e667e0f55ad3c0000fab"
 #import <MLTransition.h>
+
+
 @implementation AppDelegate (Category)
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return  [UMSocialSnsService handleOpenURL:url];
+}
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return  [UMSocialSnsService handleOpenURL:url];
+}
 
 - (void)initializeWithApplication:(UIApplication *)application{
+    
+    [UMSocialWechatHandler setWXAppId:WeChatAPPID  appSecret:WeChatAPPSecret url:@"http://www.umeng.com/social"];
     
     [MobClick startWithAppkey:AppKey reportPolicy:BATCH channelId:nil];
     [MobClick setLogEnabled:YES];

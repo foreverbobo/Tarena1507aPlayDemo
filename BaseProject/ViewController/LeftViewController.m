@@ -12,6 +12,7 @@
 #import "DuoWanViewController.h"
 #import "XiMaViewController.h"
 #import "DuoWanTabBarViewController.h"
+#import "MyInfoViewController.h"
 @interface LeftViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)NSArray *itemsNames;
@@ -71,6 +72,10 @@
             break;
         case 2:
             [self.sideMenuViewController setContentViewController:[DuoWanTabBarViewController standardInstanse]];
+            break;
+        case 3:
+            [self.sideMenuViewController setContentViewController:[MyInfoViewController standardMyInfoNavi]];
+            break;
         default:
             break;
     }

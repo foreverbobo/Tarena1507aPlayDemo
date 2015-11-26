@@ -85,4 +85,10 @@ static const int ddLogLevel = DDLogLevelError;
 #import <TPKeyboardAvoidingCollectionView.h>
 #import <UIScrollView+TPKeyboardAvoidingAdditions.h>
 
+//友盟
+#import "UMSocial.h"
+#import "UMSocialWechatHandler.h"
+//引入Bmob框架
+#import <BmobSDK/Bmob.h>
+
 #endif /* BaseProject_pch */

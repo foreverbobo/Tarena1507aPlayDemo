@@ -12,6 +12,7 @@
 #import "TuWanBaseNetManager.h"
 #import "DuoWanViewController.h"
 #import "XiMaViewController.h"
+#import "DuoWanNetManager.h"
 @interface AppDelegate ()
 
 @end
@@ -19,10 +20,13 @@
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [Bmob registerWithAppKey:@"5110da67d4671648601b935345bb8b69"];
+    
     [self initializeWithApplication:application];
     [self configGlobalUIStyle];
     self.window.rootViewController = self.sideMenu;
-   
+
 
     
     
