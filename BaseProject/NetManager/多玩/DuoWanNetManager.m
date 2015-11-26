@@ -188,7 +188,7 @@
 {
     NSString *path = [NSString stringWithFormat:@"http://box.dwstatic.com/apiVideoesNormalDuowan.php?action=l&p=%ld&v=140&OSType=iOS9.1&tag=%@&src=letv",page,hero];
     return  [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-        NSArray *model = [Duowanheroskinarray mj_objectArrayWithKeyValuesArray:responseObj];
+        NSArray *model = [DuoWanHeroMediaDataModel mj_objectArrayWithKeyValuesArray:responseObj];
         completionHandle(model,error);
     }];
 

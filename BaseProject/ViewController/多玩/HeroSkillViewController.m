@@ -460,11 +460,7 @@
     {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"Cell1"];
     }
-//    if(self.index >= 0)
-//    {
-//    
-//        cell.textLabel.text = [self.skillVM descForIndex:self.index];
-//    }
+
     return cell;
     
     

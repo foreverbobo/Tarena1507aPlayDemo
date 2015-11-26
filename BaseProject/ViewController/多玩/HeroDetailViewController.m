@@ -9,6 +9,11 @@
 #import "HeroDetailViewController.h"
 #import "HeroIconView.h"
 #import "HeroSkillViewController.h"
+#import "HeroEquipViewController.h"
+#import "PageViewController.h"
+#import "HeroMediaViewController.h"
+#import "BaiKeWebViewController.h"
+#import "HeroVoiceViewController.h"
 @interface HeroDetailViewController ()
 @property (nonatomic,strong)UIView *headView;
 @end
@@ -87,15 +92,30 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
  //   self.headView.hidden = NO;
-    HeroSkillViewController *skillVC = [[HeroSkillViewController alloc]initWithHeroName:self.heroInfoDic[@"enName"]];
-    [self.view addSubview:skillVC.view];
-    [skillVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+    PageViewController *pageVC = [[PageViewController alloc]initWithControlArray:[self controllsArray] buttonNameArr:[self buttonNameArray] topHeight:30 selectImage:[UIImage imageNamed:@"bg_navigationBar_normal"] unSelectImage:[UIImage imageNamed:@"navigationbar_bg"]];
+    [self addChildViewController:pageVC];
+    [self.view addSubview:pageVC.view];
+    [pageVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.headView.mas_bottom).mas_equalTo(0);
-        make.left.bottom.right.mas_equalTo(0);
+        make.left.right.bottom.mas_equalTo(0);
     }];
+
     
 }
-
+-(NSArray *)controllsArray
+{
+    HeroSkillViewController *skillVC = [[HeroSkillViewController alloc]initWithHeroName:self.heroInfoDic[@"enName"]];
+    HeroEquipViewController *equipVC = [[HeroEquipViewController alloc]initWithHeroName:self.heroInfoDic[@"enName"]];
+    HeroMediaViewController *mediaVC = [[HeroMediaViewController alloc]initWithHeroName:self.heroInfoDic[@"enName"]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://lolbox.duowan.com/phone/heroTop10PlayersNew.php?hero=%@",self.heroInfoDic[@"enName"]]];
+    BaiKeWebViewController *webVC = [[BaiKeWebViewController alloc]initWithUrl:url];
+    HeroVoiceViewController *voiceVC = [[HeroVoiceViewController alloc]initWithHeroName:self.heroInfoDic[@"enName"]];
+    return @[skillVC,equipVC,mediaVC,webVC,voiceVC];
+}
+-(NSArray *)buttonNameArray
+{
+    return @[@"技能",@"出装",@"视频",@"排行",@"配音"];
+}
 
 
 @end

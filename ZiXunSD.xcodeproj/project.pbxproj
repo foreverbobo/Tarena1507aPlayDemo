@@ -92,6 +92,9 @@
 		219083621BF5FD230091C890 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 219083611BF5FD230091C890 /* libicucore.tbd */; };
 		219083641BF5FD380091C890 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 219083631BF5FD380091C890 /* libsqlite3.tbd */; };
 		219083661BF5FD4B0091C890 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219083651BF5FD4B0091C890 /* MediaPlayer.framework */; };
+		219BD95C1C0713F70030749E /* HeroEquipViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 219BD95B1C0713F70030749E /* HeroEquipViewModel.m */; };
+		219BD95F1C07165D0030749E /* HeroEquipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 219BD95E1C07165D0030749E /* HeroEquipCell.m */; };
+		219BD9621C071B2A0030749E /* HeroEquipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219BD9611C071B2A0030749E /* HeroEquipViewController.m */; };
 		21A9580A1BEB068200087537 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958091BEB068200087537 /* BaseNetManager.m */; };
 		21A958181BEB083500087537 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21A958151BEB083500087537 /* MBProgressHUD.bundle */; };
 		21A958191BEB083500087537 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A958171BEB083500087537 /* MBProgressHUD+MJ.m */; };
@@ -112,6 +115,11 @@
 		21B05E051BF49FCE0022D042 /* ZBDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B05E041BF49FCE0022D042 /* ZBDetailViewModel.m */; };
 		21B104641BEC7CE200459A24 /* WBImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B104631BEC7CE200459A24 /* WBImageView.m */; };
 		21B104671BEC7F4500459A24 /* TuWanWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B104661BEC7F4500459A24 /* TuWanWebView.m */; };
+		21C07B471C0720BD00B238F4 /* HeroMediaViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C07B461C0720BD00B238F4 /* HeroMediaViewModel.m */; };
+		21C07B4D1C07249C00B238F4 /* HeroMediaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C07B4C1C07249C00B238F4 /* HeroMediaCell.m */; };
+		21C07B501C0727D100B238F4 /* HeroMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C07B4F1C0727D100B238F4 /* HeroMediaViewController.m */; };
+		21C07B531C072DDB00B238F4 /* HeroVoiceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C07B521C072DDB00B238F4 /* HeroVoiceViewModel.m */; };
+		21C07B561C07305800B238F4 /* HeroVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C07B551C07305800B238F4 /* HeroVoiceViewController.m */; };
 		21C6A0981C0597B6003BBF82 /* HeroDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C6A0971C0597B6003BBF82 /* HeroDetailViewController.m */; };
 		21C6A09B1C059FDA003BBF82 /* HeroSkillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C6A09A1C059FDA003BBF82 /* HeroSkillViewController.m */; };
 		21C6A09E1C05A00E003BBF82 /* HeroSkillViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C6A09D1C05A00E003BBF82 /* HeroSkillViewModel.m */; };
@@ -319,6 +327,12 @@
 		219083631BF5FD380091C890 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		219083651BF5FD4B0091C890 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		219BB3441BF1E7E000A3B9A0 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		219BD95A1C0713F70030749E /* HeroEquipViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroEquipViewModel.h; sourceTree = "<group>"; };
+		219BD95B1C0713F70030749E /* HeroEquipViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroEquipViewModel.m; sourceTree = "<group>"; };
+		219BD95D1C07165D0030749E /* HeroEquipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroEquipCell.h; sourceTree = "<group>"; };
+		219BD95E1C07165D0030749E /* HeroEquipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroEquipCell.m; sourceTree = "<group>"; };
+		219BD9601C071B2A0030749E /* HeroEquipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroEquipViewController.h; sourceTree = "<group>"; };
+		219BD9611C071B2A0030749E /* HeroEquipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroEquipViewController.m; sourceTree = "<group>"; };
 		21A958081BEB068200087537 /* BaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetManager.h; sourceTree = "<group>"; };
 		21A958091BEB068200087537 /* BaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetManager.m; sourceTree = "<group>"; };
 		21A958151BEB083500087537 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
@@ -357,6 +371,16 @@
 		21B104631BEC7CE200459A24 /* WBImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBImageView.m; sourceTree = "<group>"; };
 		21B104651BEC7F4500459A24 /* TuWanWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanWebView.h; sourceTree = "<group>"; };
 		21B104661BEC7F4500459A24 /* TuWanWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanWebView.m; sourceTree = "<group>"; };
+		21C07B451C0720BD00B238F4 /* HeroMediaViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroMediaViewModel.h; sourceTree = "<group>"; };
+		21C07B461C0720BD00B238F4 /* HeroMediaViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroMediaViewModel.m; sourceTree = "<group>"; };
+		21C07B4B1C07249C00B238F4 /* HeroMediaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroMediaCell.h; sourceTree = "<group>"; };
+		21C07B4C1C07249C00B238F4 /* HeroMediaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroMediaCell.m; sourceTree = "<group>"; };
+		21C07B4E1C0727D100B238F4 /* HeroMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroMediaViewController.h; sourceTree = "<group>"; };
+		21C07B4F1C0727D100B238F4 /* HeroMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroMediaViewController.m; sourceTree = "<group>"; };
+		21C07B511C072DDB00B238F4 /* HeroVoiceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroVoiceViewModel.h; sourceTree = "<group>"; };
+		21C07B521C072DDB00B238F4 /* HeroVoiceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroVoiceViewModel.m; sourceTree = "<group>"; };
+		21C07B541C07305800B238F4 /* HeroVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroVoiceViewController.h; sourceTree = "<group>"; };
+		21C07B551C07305800B238F4 /* HeroVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroVoiceViewController.m; sourceTree = "<group>"; };
 		21C6A0961C0597B6003BBF82 /* HeroDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDetailViewController.h; sourceTree = "<group>"; };
 		21C6A0971C0597B6003BBF82 /* HeroDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroDetailViewController.m; sourceTree = "<group>"; };
 		21C6A0991C059FDA003BBF82 /* HeroSkillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroSkillViewController.h; sourceTree = "<group>"; };
@@ -860,6 +884,10 @@
 				21493AD11BF43163008085E3 /* EquipCollectionLayout.m */,
 				2163F9F11C05655400248531 /* HeroDetailCollectionViewCell.h */,
 				2163F9F21C05655400248531 /* HeroDetailCollectionViewCell.m */,
+				219BD95D1C07165D0030749E /* HeroEquipCell.h */,
+				219BD95E1C07165D0030749E /* HeroEquipCell.m */,
+				21C07B4B1C07249C00B238F4 /* HeroMediaCell.h */,
+				21C07B4C1C07249C00B238F4 /* HeroMediaCell.m */,
 			);
 			path = "多玩";
 			sourceTree = "<group>";
@@ -912,6 +940,12 @@
 				21C6A0971C0597B6003BBF82 /* HeroDetailViewController.m */,
 				21C6A0991C059FDA003BBF82 /* HeroSkillViewController.h */,
 				21C6A09A1C059FDA003BBF82 /* HeroSkillViewController.m */,
+				219BD9601C071B2A0030749E /* HeroEquipViewController.h */,
+				219BD9611C071B2A0030749E /* HeroEquipViewController.m */,
+				21C07B4E1C0727D100B238F4 /* HeroMediaViewController.h */,
+				21C07B4F1C0727D100B238F4 /* HeroMediaViewController.m */,
+				21C07B541C07305800B238F4 /* HeroVoiceViewController.h */,
+				21C07B551C07305800B238F4 /* HeroVoiceViewController.m */,
 				218A27541BF2CE1A0073A363 /* BaiKeViewController.h */,
 				218A27551BF2CE1A0073A363 /* BaiKeViewController.m */,
 				218A27601BF32A5E0073A363 /* BaiKeWebViewController.h */,
@@ -998,6 +1032,12 @@
 				2163F9E91C05502600248531 /* HeroViewModel.m */,
 				21C6A09C1C05A00E003BBF82 /* HeroSkillViewModel.h */,
 				21C6A09D1C05A00E003BBF82 /* HeroSkillViewModel.m */,
+				219BD95A1C0713F70030749E /* HeroEquipViewModel.h */,
+				219BD95B1C0713F70030749E /* HeroEquipViewModel.m */,
+				21C07B451C0720BD00B238F4 /* HeroMediaViewModel.h */,
+				21C07B461C0720BD00B238F4 /* HeroMediaViewModel.m */,
+				21C07B511C072DDB00B238F4 /* HeroVoiceViewModel.h */,
+				21C07B521C072DDB00B238F4 /* HeroVoiceViewModel.m */,
 			);
 			path = "多玩";
 			sourceTree = "<group>";
@@ -1322,6 +1362,7 @@
 				21E4A9961BF357BB008E5EAE /* BestGroupDetailViewController.m in Sources */,
 				21F2C8081BE73F110085ABB8 /* DuoWanAllHeroModel.m in Sources */,
 				210BAD231BF0AF000069D965 /* XiMaTracksCell.m in Sources */,
+				21C07B501C0727D100B238F4 /* HeroMediaViewController.m in Sources */,
 				21A958B11BEB28E800087537 /* XiMaViewController.m in Sources */,
 				21856DC61BEC365800C5D712 /* TuWanListViewController.m in Sources */,
 				21A958B71BEB28FA00087537 /* MyInfoViewController.m in Sources */,
@@ -1336,6 +1377,7 @@
 				21B104671BEC7F4500459A24 /* TuWanWebView.m in Sources */,
 				21B05E021BF4970B0022D042 /* ZBDetailViewController.m in Sources */,
 				21F2C8601BE782010085ABB8 /* RankingListModel.m in Sources */,
+				21C07B471C0720BD00B238F4 /* HeroMediaViewModel.m in Sources */,
 				21F2C8421BE774480085ABB8 /* DuoWanBaiKeListModel.m in Sources */,
 				2100826B1BDE59EE007981A4 /* AppDelegate.m in Sources */,
 				21FB83651BE8852F00210D85 /* DuoWanWeekDataModel.m in Sources */,
@@ -1367,12 +1409,16 @@
 				21C6A09B1C059FDA003BBF82 /* HeroSkillViewController.m in Sources */,
 				210082681BDE5990007981A4 /* BaseViewModel.m in Sources */,
 				21F2C8151BE7429C0085ABB8 /* DuoWanHeroEquipModel.m in Sources */,
+				21C07B531C072DDB00B238F4 /* HeroVoiceViewModel.m in Sources */,
 				21F2C85F1BE782010085ABB8 /* AlbumModel.m in Sources */,
 				21493AE11BF46F2D008085E3 /* SkillDetailViewController.m in Sources */,
+				219BD95C1C0713F70030749E /* HeroEquipViewModel.m in Sources */,
 				2181B32B1BF71FF6006F99A6 /* MyInputCell.m in Sources */,
+				21C07B4D1C07249C00B238F4 /* HeroMediaCell.m in Sources */,
 				21A9582D1BEB094C00087537 /* DuoWanNetManager.m in Sources */,
 				21F2C8241BE7535B0085ABB8 /* heroziliao.m in Sources */,
 				21A958301BEB095600087537 /* TuWanBaseNetManager.m in Sources */,
+				21C07B561C07305800B238F4 /* HeroVoiceViewController.m in Sources */,
 				21A958331BEB096100087537 /* XiMaNetManager.m in Sources */,
 				2163F9F01C05616200248531 /* HeroListViewController.m in Sources */,
 				21A958B41BEB28EF00087537 /* LeftViewController.m in Sources */,
@@ -1396,6 +1442,7 @@
 				210082541BDE5933007981A4 /* BaseModel.m in Sources */,
 				215337631BEB7DB5008E3BE0 /* DuoWanViewController.m in Sources */,
 				21A958AE1BEB28DC00087537 /* TuWanViewController.m in Sources */,
+				219BD9621C071B2A0030749E /* HeroEquipViewController.m in Sources */,
 				21F2C8121BE741710085ABB8 /* DuoWanHeroMediaModel.m in Sources */,
 				213897581BE734F00097B993 /* TuWanBaseModel.m in Sources */,
 				2163F9F31C05655400248531 /* HeroDetailCollectionViewCell.m in Sources */,
@@ -1405,6 +1452,7 @@
 				2163F9F61C05884300248531 /* PageViewController.m in Sources */,
 				21F2C8511BE774960085ABB8 /* DuoWanGiftModel.m in Sources */,
 				21E845CC1BF9E738008A77DE /* UserActivity.m in Sources */,
+				219BD95F1C07165D0030749E /* HeroEquipCell.m in Sources */,
 				21FB780A1BF0724700E7C187 /* XiMaViewModel.m in Sources */,
 				21B104641BEC7CE200459A24 /* WBImageView.m in Sources */,
 			);
