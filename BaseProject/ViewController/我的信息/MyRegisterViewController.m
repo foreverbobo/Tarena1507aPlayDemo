@@ -11,6 +11,9 @@
 #import "WBImageView.h"
 @interface MyRegisterViewController ()<UITableViewDelegate,UITableViewDataSource,MyInputCellDelegate>
 @property (nonatomic,strong)TPKeyboardAvoidingTableView *tableView;
+@property (nonatomic,weak)UITextField *userNameTF;
+@property (nonatomic,weak)UITextField *userPswTF;
+@property (nonatomic,weak)UITextField *userPswAgainTF;
 @end
 
 @implementation MyRegisterViewController
@@ -64,6 +67,27 @@
     }];
 #pragma mark -- 注册功能实现
     [registBtn bk_addEventHandler:^(id sender) {
+        if(![self.userPswTF.text isEqualToString:self.userPswAgainTF.text])
+        {
+            [MBProgressHUD showError:@"两次密码不一样"];
+        }
+        else
+        {
+            BmobObject *obj = [BmobObject objectWithClassName:@"user"];
+            [obj setObject:self.userNameTF.text forKey:@"userName"];
+            [obj setObject:self.userPswTF.text forKey:@"userPwd"];
+            [obj saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+                if(isSuccessful)
+                {
+                    [MBProgressHUD showSuccess:@"注册成功"];
+                }
+                else
+                {
+                    [MBProgressHUD showError:@"账户已存在"];
+                }
+            }];
+        }
+        
        
     } forControlEvents:UIControlEventTouchUpInside];
 
@@ -83,16 +107,19 @@
     if(indexPath.row == 0)
     {
         cell.textfield.placeholder = @"请输入账号";
+        self.userNameTF = cell.textfield;
     }
     else if(indexPath.row == 1)
     {
         cell.textfield.placeholder = @"请输入密码";
         cell.textfield.secureTextEntry = YES;
+        self.userPswTF = cell.textfield;
     }
     else
     {
         cell.textfield.placeholder = @"请确认密码";
         cell.textfield.secureTextEntry = YES;
+        self.userPswAgainTF = cell.textfield;
     }
     cell.textfield.clearButtonMode = UITextFieldViewModeWhileEditing;
     return cell;

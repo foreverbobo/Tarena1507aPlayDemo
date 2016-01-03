@@ -20,6 +20,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         TuWanViewController *vc = [[TuWanViewController alloc]initWithViewControllerClasses:[self controllerArray] andTheirTitles:[self itemsNames]];
+        vc.menuViewStyle = WMMenuViewStyleLine;
         vc.keys = [self keysArray];
         vc.values = [self valuesArray];
         navi = [[UINavigationController alloc]initWithRootViewController:vc];

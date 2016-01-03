@@ -75,13 +75,14 @@
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    HeroDetailViewController *detailVC = [[HeroDetailViewController alloc]initWithHeroInfoDic:[self.heroVM heroInfoDicForRow:indexPath.row]];
-    [self.navigationController pushViewController:detailVC animated:YES];
+//    HeroDetailViewController *detailVC = [[HeroDetailViewController alloc]initWithHeroInfoDic:[self.heroVM heroInfoDicForRow:indexPath.row]];
+//    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
     return UIEdgeInsetsMake(5, 5, 5, 5);
+
 }
 -(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {

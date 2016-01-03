@@ -91,6 +91,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    [FactoryClass addReturnItemToVC:self];
  //   self.headView.hidden = NO;
     PageViewController *pageVC = [[PageViewController alloc]initWithControlArray:[self controllsArray] buttonNameArr:[self buttonNameArray] topHeight:30 selectImage:[UIImage imageNamed:@"bg_navigationBar_normal"] unSelectImage:[UIImage imageNamed:@"navigationbar_bg"]];
     [self addChildViewController:pageVC];

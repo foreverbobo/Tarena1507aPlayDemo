@@ -27,7 +27,6 @@
     [self configGlobalUIStyle];
     self.window.rootViewController = self.sideMenu;
 
-
     
     
     return YES;

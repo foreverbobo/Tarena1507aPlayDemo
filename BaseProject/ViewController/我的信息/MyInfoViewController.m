@@ -79,7 +79,26 @@
     }];
 #pragma mark -- 登录功能实现
     [loginBtn bk_addEventHandler:^(id sender) {
-        NSLog(@"%@    %@",self.userTextField.text,self.pswTextField.text);
+        BmobQuery   *bquery = [BmobQuery queryWithClassName:@"user"];
+        [bquery whereKey:@"userName" equalTo:self.userTextField.text];
+        [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+            if(!error)
+            {
+                BmobObject *obj = array.firstObject;
+                NSString *pwd = [obj objectForKey:@"userPwd"];
+                if([pwd isEqualToString:self.pswTextField.text])
+                {
+                    [MBProgressHUD showSuccess:@"登陆成功"];
+                }
+                else
+                {
+                    [MBProgressHUD showError:@"登陆失败"];
+                }
+            }
+        }];
+        
+        
+        
     } forControlEvents:UIControlEventTouchUpInside];
     UIButton *forgetBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [forgetBtn setTitle:@"忘记密码" forState:UIControlStateNormal];

@@ -445,6 +445,7 @@
             make.left.mas_equalTo(icon.mas_right).mas_equalTo(10);
             make.right.mas_equalTo(-10);
             make.top.mas_equalTo(10);
+            make.height.mas_greaterThanOrEqualTo(50);
             make.bottom.mas_equalTo(-10);
         }];
         cell.textLabel.numberOfLines = 0;
